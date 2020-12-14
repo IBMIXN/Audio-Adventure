@@ -8,13 +8,15 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
-public class NavigateHomeIntentHandler implements RequestHandler {
-    private static final String INTENT_NAME = "EverythingIntent";
+public class CancelAndStopIntentHandler implements RequestHandler {
+    private static final String INTENT_NAME1 = "AMAZON.CancelIntent";
+    private static final String INTENT_NAME2 = "AMAZON.StopIntent";
+
+
     @Override
     public boolean canHandle(HandlerInput handlerInput) {
-        return handlerInput.matches(intentName(INTENT_NAME));
+        return handlerInput.matches(intentName(INTENT_NAME1).or(intentName(INTENT_NAME2)));
     }
-
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
         return handlerInput.getResponseBuilder()
