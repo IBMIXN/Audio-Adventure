@@ -1,11 +1,8 @@
 version: 2.1
-jobs:
-  build:
-   working_directory: ~/src/main/java
-    docker:
-      - image:  cimg/openjdk:15.0.0
-  steps:
-   - checkout
-      - run:
-          name: The First Step
 
+orbs:
+  maven: circleci/maven@0.0.12
+workflows:
+  maven_test:
+    jobs:
+      -maven/test # checkout, build, test, and upload test results
