@@ -10,33 +10,42 @@ import com.ibm.watson.assistant.v2.Assistant;
 import com.ibm.watson.assistant.v2.model.*;
 import com.ibm.watson.assistant.v2.model.MessageResponse;
 
+import javax.swing.text.html.Option;
 
 
 public class WatsonHandlerImp implements WatsonHandler{
 
     @Override
     public Optional<String> assistantMessage(String input, String sessionID, Consumer<String> updateSessionID) {
-        IamAuthenticator  authenticator = new IamAuthenticator ("{iam_api_key}");
+        IamAuthenticator  authenticator = new IamAuthenticator ("<api_key>");
         Assistant assistant = new Assistant("2020-09-24", authenticator);
-        assistant.setServiceUrl("<url>");
+        assistant.setServiceUrl("<url>>");
 
         if (sessionID.isEmpty()){
-            //request new session
-
+            CreateSessionOptions options = new CreateSessionOptions.Builder("<assistantID>").build();
+            SessionResponse sessionResponse = assistant.createSession(options).execute().getResult();
+            sessionID = sessionResponse.getSessionId();
+            System.out.println("Generated new session with id:" + sessionID);
         }
 
         try {
             // Invoke a Watson Assistant method
+            MessageInputOptions inputOptions = new MessageInputOptions.Builder()
+                    .returnContext(true)
+                    .build();
             MessageInput inputAssistant = new MessageInput.Builder()
                     .messageType("text")
                     .text(input)
+                    .options(inputOptions)
                     .build();
-            MessageOptions options = new MessageOptions.Builder("{assistant_id}", "{session_id}")
+            MessageOptions options = new MessageOptions.Builder("<assistantID>", sessionID)
                     .input(inputAssistant)
                     .build();
-            MessageResponse response = assistant.message(options).execute().getResult();
-            String responseString = response.getOutput().getGeneric().get(0).text();
-            updateSessionID.accept(sessionID);
+            MessageResponse messageResponse = assistant.message(options).execute().getResult();
+            String responseString = messageResponse.getOutput().getGeneric().get(0).text();
+           String newSessionID = messageResponse.getContext().global().sessionId();
+            System.out.println("New Session id: " + newSessionID);
+            updateSessionID.accept(newSessionID);
             return Optional.of(responseString);
         } catch (NotFoundException e) {
             // Handle Not Found (404) exception
