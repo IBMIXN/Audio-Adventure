@@ -15,7 +15,9 @@ public class CancelAndStopIntentHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput handlerInput) {
-        return handlerInput.matches(intentName(INTENT_NAME1).or(intentName(INTENT_NAME2)));
+        var res = handlerInput.matches(intentName(INTENT_NAME1).or(intentName(INTENT_NAME2)));
+        System.out.println("CancelAndStopIntentHandler called " + res);
+        return res;
     }
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
