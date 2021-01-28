@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  audioAdventure
+  An audio game developed using Alexa Skill and Watson Assistant
+
+Resources:
+  AlexaHandlerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: MainStreamHandler
+      PackageType: Zip
+      Runtime: java11
+      CodeUri: ./audioAdventure
+      MemorySize: 512
+      Timeout: 15
+      Events:
+        Alexa:
+          Type: AlexaSkill
+          SkillId: amzn1.ask.skill.70c90c47-8c77-48aa-b57c-2eb6ffdf495c
+
+Outputs:
+  AlexaSampleFunctionArn:
+    Value: !GetAtt AlexaSampleFunction.Arn
+
