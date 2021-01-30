@@ -38,6 +38,6 @@ responds to events coming from the Alexa Skill.
 - Run `sam deploy --guided` to upload the function and let CloudFormation to handle the stack
  deployment
 - You can now test the project using the Alexa web testing interface. To fire up the skill, ask
- Alexa to let `Watson Bard` to tell you a story. 
+ Alexa `Ask Watson Bard for a story`. 
 ### Acknowledgements
 + [IBM Alexa Skill & Watson Assistant Sample](https://github.com/IBM/alexa-skill-watson-assistant)
