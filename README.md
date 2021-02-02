@@ -8,3 +8,36 @@ The game is a storytelling game that revolves around a linear storyline with mul
 
 The game utilizes Watson Assistant (which incorporates Natural Language Understanding) and Tone Analyser (to determine emotional responses). It also uses Alexa skill (parses player's spoken words into strings), so that those at home can enjoy it without the need to download, configure and setup.
 
+### Configuration
+[Stack structure]()
+##### Requirement
+ - Amazon dev Account & IBM dev account 
+ - AWS CLI & SAM 
+ - Alexa Skill 
+ - AWS Lambda, or other serverless computing services 
+ - Watson Assistant
+##### Configure AWS CLI & Docker
+1. Setup *AWS CLI* on your local machine and download *SAM* for easier Lambda function management
+. You can find tutorials [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). 
+You can find your *AWS CLI* tokens & passcode
+ in the AWS console.
+2. (Optional) Install docker if you want to debug and test the function locally, you can find
+ more info on this [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html). **note**: don't forget to start Docker Daemon.  
+ E.g. `sudo dockerd`.
+##### Build Alexa & Watson Assistant Model
+Using models in `model` folder to build Alexa skill and Watson Assistant Skill. Just upload the
+ appropriate json files and build models.
+##### Configure Parameters
+1. Copy/Paste the Alexa Skill ID to `template.yaml[SkillId]` section, so lambda function
+ only
+responds to events coming from the Alexa Skill.
+2. Copy/Paste details related to Watson Assistant to the `config.xml` file (Clone it from the
+ `config_template.xml` and assign the correct parameters).
+##### Deployment
+- Run `sam build` to build the function
+- Run `sam deploy --guided` to upload the function and let CloudFormation to handle the stack
+ deployment
+- You can now test the project using the Alexa web testing interface. To fire up the skill, ask
+ Alexa `Ask Watson Bard for a story`. 
+### Acknowledgements
++ [IBM Alexa Skill & Watson Assistant Sample](https://github.com/IBM/alexa-skill-watson-assistant)
