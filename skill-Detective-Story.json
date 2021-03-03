@@ -24,6 +24,52 @@
   ],
   "entities": [
     {
+      "entity": "CheckpointOptions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Accusation",
+          "synonyms": [
+            "Accusation ",
+            "I want to accuse people ",
+            "I want to go to the end",
+            "The accusation part",
+            "to the end",
+            "to the last part"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Introduction",
+          "synonyms": [
+            "Introduction",
+            "I want to go back to the beginning",
+            "I want to go back to the Introduction",
+            "I want to go back to the start",
+            "I want to start from the beginning",
+            "The beginning",
+            "the start",
+            "to the first part"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Questioning",
+          "synonyms": [
+            "Asking Questions",
+            "I want to ask questions",
+            "I want to go back to questioning",
+            "I want to go to Questioning",
+            "I want to question",
+            "I want to question the witnesses",
+            "Questioning",
+            "The Questioning Part"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
       "entity": "Explanations",
       "values": [
         {
@@ -421,10 +467,13 @@
             "let's stop",
             "let us move on",
             "let us stop",
+            "Nothing more",
             "someone else",
             "Stop",
             "Stop Questioning",
-            "That's all from me know"
+            "That's all from me know",
+            "Yes",
+            "Yes it is"
           ]
         },
         {
@@ -876,6 +925,31 @@
     },
     {
       "type": "standard",
+      "title": "To Introduction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@CheckpointOptions:Introduction",
+      "dialog_node": "node_10_1614593703788"
+    },
+    {
+      "type": "standard",
       "title": "Pierre Montesquieu Suspicions Relent 2 ",
       "output": {
         "generic": [
@@ -1033,6 +1107,28 @@
     },
     {
       "type": "standard",
+      "title": "To Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@CheckpointOptions:Questioning",
+      "dialog_node": "node_11_1614593703788",
+      "previous_sibling": "node_10_1614593703788"
+    },
+    {
+      "type": "standard",
       "title": "Puzzle 1",
       "output": {
         "generic": [
@@ -1133,6 +1229,12 @@
             "values": [
               {
                 "text": "<voice name=\"Geraint\">What kind of lousy detective are you? You're lucky I’m feeling generous today, so I’ll give you another chance. Get it right this time.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Geraint\">Oh detective, this isn’t as difficult as you think, I’m sure you’ve solved cases much harder than this.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Geraint\">Could it be that you are feeling a bit under the weather today? Now is not to time, please concentrate</voice>\n"
               }
             ],
             "response_type": "text",
@@ -1193,6 +1295,31 @@
     },
     {
       "type": "standard",
+      "title": "To Introduction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1614590771238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@CheckpointOptions:Introduction",
+      "dialog_node": "node_1_1614591723288"
+    },
+    {
+      "type": "standard",
       "title": "Olivia Winterton Victim Relation Press 2",
       "output": {
         "generic": [
@@ -1237,6 +1364,32 @@
       "conditions": "@YesOrNo:Yes",
       "dialog_node": "node_12_1613224888006",
       "previous_sibling": "node_11_1613224888006"
+    },
+    {
+      "type": "standard",
+      "title": "Not Understood",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your choice was not understood. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1614593703787"
+      },
+      "conditions": "@CheckpointOptions != \"Questioning\" &&  @CheckpointOptions != \"Introduction\" && @CheckpointOptions != \"Accusation\"",
+      "dialog_node": "node_12_1614593703788",
+      "previous_sibling": "node_6_1614593733715"
     },
     {
       "type": "standard",
@@ -1445,6 +1598,12 @@
             "values": [
               {
                 "text": "<voice name=\"Matthew\">So what do you want to know? Don’t hold back.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Anything else you’d like to ask about me?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Do you still need anymore information on me?</voice>\n"
               }
             ],
             "response_type": "text",
@@ -1632,6 +1791,19 @@
       },
       "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
       "dialog_node": "node_2_1613567340120"
+    },
+    {
+      "type": "standard",
+      "title": "To Questioning",
+      "parent": "node_5_1614590771238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@CheckpointOptions:Questioning",
+      "dialog_node": "node_2_1614591725318",
+      "previous_sibling": "node_1_1614591723288"
     },
     {
       "type": "standard",
@@ -1991,6 +2163,12 @@
             "values": [
               {
                 "text": "<voice name=\"Emma\">Is there anything you want to ask me?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Emma\">Anymore questions?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Emma\">Is there anything else you want to know about me? </voice>\n"
               }
             ],
             "response_type": "text",
@@ -2083,6 +2261,12 @@
             "values": [
               {
                 "text": "<voice name=\"Matthew\">Well then, who do you want to question?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Anyone else you want to question?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Have you finished questioning? Let me know if you have or tell me who you want to question. But please, do take your time.</voice>\n"
               }
             ],
             "response_type": "text",
@@ -2562,6 +2746,26 @@
     },
     {
       "type": "standard",
+      "title": "Control 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you wish to continue the game from the questioning of the witnesses or do you want to start over from the beginning?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1614590771238"
+    },
+    {
+      "type": "standard",
       "title": "Elizabeth Wilde Victim Relation Press 2",
       "output": {
         "generic": [
@@ -2705,6 +2909,12 @@
             "values": [
               {
                 "text": "<voice name=\"Hans\">What would you like to ask me?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Hans\">Anything else you need? If so, ask away.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Hans\">Is that everything you needed to know from me?</voice>\n"
               }
             ],
             "response_type": "text",
@@ -2909,6 +3119,45 @@
     },
     {
       "type": "standard",
+      "title": "Not Understood",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your choice was not understood. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1614590771238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1614590771238"
+      },
+      "conditions": "@CheckpointOptions != \"Questioning\" && @CheckpointOptions != \"Introduction\"",
+      "dialog_node": "node_6_1614591728104",
+      "previous_sibling": "node_2_1614591725318"
+    },
+    {
+      "type": "standard",
+      "title": "To Accusation",
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@CheckpointOptions:Accusation",
+      "dialog_node": "node_6_1614593733715",
+      "previous_sibling": "node_11_1614593703788"
+    },
+    {
+      "type": "standard",
       "title": "Constantine Bridgewater End",
       "output": {
         "generic": [
@@ -3094,6 +3343,12 @@
             "values": [
               {
                 "text": "<voice name= \"Matthew\">Not quite, keep at it though, and you may yet convince me. Allow me to repeat the riddle.</voice>\n\n"
+              },
+              {
+                "text": "<voice name= \"Matthew\">That was incorrect, but don’t give up just yet, let me repeat it again.</voice>\n"
+              },
+              {
+                "text": "<voice name= \"Matthew\">Perhaps I overestimated you. Keep trying, you are better than this. </voice>\n"
               }
             ],
             "response_type": "text",
@@ -3187,6 +3442,12 @@
             "values": [
               {
                 "text": "<voice name=\"Amy\">Go on then.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Amy\">Have you had enough?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Amy\">Is that everything?</voice>\n"
               }
             ],
             "response_type": "text",
@@ -3789,6 +4050,12 @@
             "values": [
               {
                 "text": "<voice name=\"Mathieu\">Please, make this quick.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Mathieu\">Finished yet? I don’t have all day</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Mathieu\">Is that all?</voice>\n"
               }
             ],
             "response_type": "text",
@@ -4125,6 +4392,25 @@
     },
     {
       "type": "standard",
+      "title": "Control 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you wish to continue the game from the questioning of the witnesses, or from the part where you accuse them, or do you want to start over from the beginning?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "dialog_node": "node_9_1614593703787",
+      "previous_sibling": "node_5_1614590771238"
+    },
+    {
+      "type": "standard",
       "title": "Pierre Montesquieu Victim Relation ",
       "output": {
         "generic": [
@@ -4263,7 +4549,8 @@
         "dialog_node": "Anything else"
       },
       "conditions": "welcome",
-      "dialog_node": "Welcome"
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_9_1614593703787"
     }
   ],
   "counterexamples": [],
