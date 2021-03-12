@@ -221,10 +221,24 @@
       "values": [
         {
           "type": "synonyms",
+          "value": "Clement Montesquieu",
+          "synonyms": [
+            "Clement",
+            "Clement Montesquieu",
+            "Monsieur Montesquieu",
+            "Montesquieu",
+            "Mr. Montesquieu",
+            "The French Guy",
+            "The frenchman"
+          ]
+        },
+        {
+          "type": "synonyms",
           "value": "Constantine Bridgewater",
           "synonyms": [
             "Bridgewater",
             "Constantine",
+            "Constantine Bridgewater",
             "Mr. Bridgewater"
           ]
         },
@@ -275,17 +289,19 @@
         },
         {
           "type": "synonyms",
-          "value": "Elroy Grey",
+          "value": "Felix Grey",
           "synonyms": [
-            "Elroy",
+            "Felix",
             "Grey",
-            "Lord Elroy",
-            "Lord Elroy Grey",
+            "Lord Felix",
+            "Lord Felix Grey",
             "Lord Grey",
-            "Mister Elroy Grey",
-            "Mr. Elroy Grey",
+            "Mister Felix Grey",
+            "Mr. Felix Grey",
             "Mr. Grey",
-            "The Lord"
+            "The Lord",
+            "the noble",
+            "The nobleman"
           ]
         },
         {
@@ -364,16 +380,6 @@
             "Widow Olivia Winterton",
             "Widow Winterton",
             "Winterton"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Pierre Montesquieu",
-          "synonyms": [
-            "Monsieur Montesquieu",
-            "Montesquieu",
-            "Mr. Montesquieu",
-            "Pierre"
           ]
         },
         {
@@ -670,7 +676,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Suspicions Relent 1",
+      "title": "Clement Montesquieu Suspicions Relent 1",
       "output": {
         "generic": [
           {
@@ -691,13 +697,13 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Suspicions Press 1",
+      "title": "Clement Montesquieu Suspicions Press 1",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">Out of curiosity, I once had someone purchase one of her pieces, she deals in antiques, and had a friend of mine examine it only to find that was is nothing more than a fake. This isn’t necessarily connected to the murder but I should mention that while Monsieur Deadman was a customer of mine, he did not ever purchase anything from her.</voice>\n"
+                "text": "<voice name=\"Mathieu\">Out of curiosity, I once had someone purchase one of her pieces, she deals in antiques you see. I had a friend of mine examine it only to find that was nothing more than a fake. This isn’t necessarily connected to the murder but I should mention that while Monsieur Deadman was a customer of mine, he did not ever purchase anything from her.</voice>"
               }
             ],
             "response_type": "text",
@@ -879,7 +885,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Accused ",
+      "title": "Clement Montesquieu Accused ",
       "output": {
         "generic": [
           {
@@ -894,7 +900,7 @@
         ]
       },
       "parent": "node_5_1613217893234",
-      "conditions": "@QuestioningOptions:(Pierre Montesquieu)",
+      "conditions": "@QuestioningOptions:(Clement Montesquieu)",
       "dialog_node": "node_10_1613224888005",
       "previous_sibling": "node_7_1613224881010"
     },
@@ -920,7 +926,7 @@
         "selector": "body",
         "dialog_node": "node_5_1613217893234"
       },
-      "conditions": "@QuestioningOptions != \"Self\" &&           @QuestioningOptions != \"Elroy Grey\" &&          @QuestioningOptions != \"Horton Gumshoe\" &&         @QuestioningOptions != \"Don't know\" &&        @QuestioningOptions != \"Nobody\" &&       @QuestioningOptions != \"Henry Deadman\" &&      @QuestioningOptions != \"Pierre Montesquieu\" &&     @QuestioningOptions != \"Olivia Winterton\" &&    @QuestioningOptions != \"Lawrence Astor\" &&   @QuestioningOptions != \"Elizabeth Wilde\" &&  @QuestioningOptions != \"Constantine Bridgewater\" && @QuestioningOptions != \"you\"",
+      "conditions": "@QuestioningOptions != \"Self\" &&              @QuestioningOptions != \"Horton Gumshoe\" &&             @QuestioningOptions != \"Don't know\" &&            @QuestioningOptions != \"Nobody\" &&           @QuestioningOptions != \"Henry Deadman\" &&         @QuestioningOptions != \"Olivia Winterton\" &&        @QuestioningOptions != \"Lawrence Astor\" &&       @QuestioningOptions != \"Elizabeth Wilde\" &&      @QuestioningOptions != \"Constantine Bridgewater\" &&     @QuestioningOptions != \"you\" &&  @QuestioningOptions != \"Clement Montesquieu\" && @QuestioningOptions != \"Felix Grey\"",
       "dialog_node": "node_10_1613568476727"
     },
     {
@@ -950,7 +956,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Suspicions Relent 2 ",
+      "title": "Clement Montesquieu Suspicions Relent 2 ",
       "output": {
         "generic": [
           {
@@ -971,7 +977,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Suspicions Press 2",
+      "title": "Clement Montesquieu Suspicions Press 2",
       "output": {
         "generic": [
           {
@@ -997,7 +1003,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation Relent 3",
+      "title": "Clement Montesquieu Victim Relation Relent 3",
       "output": {
         "generic": [
           {
@@ -1022,7 +1028,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation Press 3",
+      "title": "Clement Montesquieu Victim Relation Press 3",
       "output": {
         "generic": [
           {
@@ -1082,7 +1088,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Backed Off",
+      "title": "Clement Montesquieu Backed Off",
       "output": {
         "generic": [
           {
@@ -1326,7 +1332,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Amy\">Does this talk of art interest you? I can openly tell you that I have inherited my enthusiasm for collecting from my late husband Oliver. He began his collection when he started to make a substantial sum of money from trading around 16 years ago and since then he had been steadily spending on new pieces until his death. His love for art is what got Monsieur Montesquieu a place in the trust and now I continue to buy pieces from him, as well as antiques from Ms. Wilde, with the money Oliver left for me, bless his soul. </voice>\n"
+                "text": "<voice name=\"Amy\">Does this talk of art interest you? I can openly tell you that I have inherited my enthusiasm for collecting from my late husband Oliver. He began his collection when he started to make a substantial sum of money from trading around 16 years ago and since then he had been steadily spending on new pieces until his death. His love for art is what got Monsieur Montesquieu a place in the trust, and now I continue to buy pieces from him, as well as antiques from Ms. Wilde, with the money Oliver left for me, bless his soul. </voice>\n"
               }
             ],
             "response_type": "text",
@@ -1341,7 +1347,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Finished",
+      "title": "Clement Montesquieu Finished",
       "output": {
         "generic": [
           {
@@ -1427,7 +1433,7 @@
     },
     {
       "type": "standard",
-      "title": "Elroy Grey Accused ",
+      "title": "Felix Grey Accused ",
       "output": {
         "generic": [
           {
@@ -1442,13 +1448,13 @@
         ]
       },
       "parent": "node_5_1613217893234",
-      "conditions": "@QuestioningOptions:(Elroy Grey)",
+      "conditions": "@QuestioningOptions:(Felix Grey)",
       "dialog_node": "node_14_1613571993013",
       "previous_sibling": "node_7_1613571616264"
     },
     {
       "type": "standard",
-      "title": "Elroy Grey Backed Off",
+      "title": "Felix Grey Backed Off",
       "output": {
         "generic": [
           {
@@ -1473,7 +1479,7 @@
     },
     {
       "type": "standard",
-      "title": "Elroy Grey Explanation",
+      "title": "Felix Grey Explanation",
       "output": {
         "generic": [
           {
@@ -2534,7 +2540,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Emma\">Mr. Deadman became a main competitor in the Bristol trading scene around 13 years ago. He was a small time trader 20 years ago, but he received some capital to expand from Lord Elroy Grey, who at the time was still a member of the trust. A year later he succeeded Lord Grey, who resigned from the trust in order to focus more on his position in the Society of Merchant Venturer’s. Since then he has been a major part of the trust, as well as business in the city.</voice>\n"
+                "text": "<voice name=\"Emma\">Mr. Deadman became a main competitor in the Bristol trading scene around 13 years ago. He was a small time trader 20 years ago, but he received some capital to expand from Lord Felix Grey, who at the time was still a member of the trust. A year later he succeeded Lord Grey, who resigned from the trust in order to focus more on his position in the Society of Merchant Venturer’s. Since then he has been a major part of the trust, as well as business in the city.</voice>\n"
               }
             ],
             "response_type": "text",
@@ -2568,7 +2574,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Matthew\">The trust had a total of 6 members. Now 5 remaining. all present at the event. Starting with the women, the madame on the left is the regal Duchess Olivia Winterton, the widow of Duke Oliver Winterton, followed by the wonderful lady next to her, Elizabeth Wilde. The two men here are Constantine Bridgewater, the owner and overseer of the construction company in charge of building the bridge, and the Frenchman, Pierre Montesquieu, an esteemed business man from France. As for the last living member, my name is Lawrence Astor, and I too am a businessman, although I keep things more local.</voice>\n"
+                "text": "<voice name=\"Matthew\">The trust had a total of 6 members. Now 5 remaining. all present at the event. Starting with the women, the madame on the left is the regal Duchess Olivia Winterton, the widow of Duke Oliver Winterton, followed by the wonderful lady next to her, Elizabeth Wilde. The two men here are Constantine Bridgewater, the owner and overseer of the construction company in charge of building the bridge, and the Frenchman, Clément Montesquieu, an esteemed business man from France. As for the last living member, my name is Lawrence Astor, and I too am a businessman, although I keep things more local.</voice>\n"
               }
             ],
             "response_type": "text",
@@ -2973,7 +2979,7 @@
         "selector": "body",
         "dialog_node": "node_4_1606839044209"
       },
-      "conditions": "@QuestioningOptions != \"Elizabeth Wilde\" &&       @QuestioningOptions != \"Lawrence Astor\" &&      @QuestioningOptions != \"Olivia Winterton\" &&     @QuestioningOptions != \"Constantine Bridgewater\" &&   @QuestioningOptions != \"Pierre Montesquieu\" &&  @QuestioningOptions != \"Done\" && @QuestioningOptions != \"you\"",
+      "conditions": "@QuestioningOptions != \"Elizabeth Wilde\" &&         @QuestioningOptions != \"Lawrence Astor\" &&        @QuestioningOptions != \"Olivia Winterton\" &&       @QuestioningOptions != \"Constantine Bridgewater\" &&    @QuestioningOptions != \"Done\" &&   @QuestioningOptions != \"you\" && @QuestioningOptions != \"Clement Montesquieu\"",
       "dialog_node": "node_6_1606839056326",
       "previous_sibling": "node_7_1606839686233"
     },
@@ -3596,7 +3602,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">You wish for me to clarify that? I meant Lord Elroy Grey, one of the original members of the trust. He gave his position to Herr Deadman so that he could retire from the trust. And I have to say that that has brought me some solace. He was never particularly nice to me, and was even rude on occasion.</voice>\n"
+                "text": "<voice name=\"Hans\">You wish for me to clarify that? I meant Lord Felix Grey, one of the original members of the trust. He gave his position to Herr Deadman so that he could retire from the trust. And I have to say that that has brought me some solace. He was never particularly nice to me, and was even rude on occasion.</voice>\n"
               }
             ],
             "response_type": "text",
@@ -3740,7 +3746,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">If I have to give a name, I would give Herr Montesquieu’s, as he is the most different out of all the trust members, and also because Lord Elroy isn’t here.</voice>\n"
+                "text": "<voice name=\"Hans\">If I have to give a name, I would give Herr Montesquieu’s, as he is the most different out of all the trust members, and also because Lord Grey isn’t here.</voice>\n"
               }
             ],
             "response_type": "text",
@@ -3797,7 +3803,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu",
+      "title": "Clement Montesquieu",
       "output": {
         "generic": [
           {
@@ -3817,7 +3823,7 @@
         "selector": "body",
         "dialog_node": "node_84_1611837880744"
       },
-      "conditions": "@QuestioningOptions:(Pierre Montesquieu)",
+      "conditions": "@QuestioningOptions:(Clement Montesquieu)",
       "dialog_node": "node_8_1606839496913",
       "previous_sibling": "node_60_1611836805378"
     },
@@ -4043,7 +4049,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Questioning",
+      "title": "Clement Montesquieu Questioning",
       "output": {
         "generic": [
           {
@@ -4069,7 +4075,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Advice",
+      "title": "Clement Montesquieu Advice",
       "output": {
         "generic": [
           {
@@ -4094,7 +4100,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu End",
+      "title": "Clement Montesquieu End",
       "output": {
         "generic": [
           {
@@ -4141,7 +4147,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Backstory Relent 1",
+      "title": "Clement Montesquieu Backstory Relent 1",
       "output": {
         "generic": [
           {
@@ -4162,7 +4168,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Backstory Press 1",
+      "title": "Clement Montesquieu Backstory Press 1",
       "output": {
         "generic": [
           {
@@ -4183,7 +4189,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Backstory Relent 2",
+      "title": "Clement Montesquieu Backstory Relent 2",
       "output": {
         "generic": [
           {
@@ -4204,7 +4210,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Backstory Press 2",
+      "title": "Clement Montesquieu Backstory Press 2",
       "output": {
         "generic": [
           {
@@ -4411,7 +4417,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation ",
+      "title": "Clement Montesquieu Victim Relation ",
       "output": {
         "generic": [
           {
@@ -4432,7 +4438,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation Relent 1",
+      "title": "Clement Montesquieu Victim Relation Relent 1",
       "output": {
         "generic": [
           {
@@ -4453,7 +4459,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation Press 1",
+      "title": "Clement Montesquieu Victim Relation Press 1",
       "output": {
         "generic": [
           {
@@ -4474,7 +4480,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation Relent 2",
+      "title": "Clement Montesquieu Victim Relation Relent 2",
       "output": {},
       "parent": "node_96_1611837880746",
       "next_step": {
@@ -4487,7 +4493,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Victim Relation Press 2",
+      "title": "Clement Montesquieu Victim Relation Press 2",
       "output": {
         "generic": [
           {
@@ -4508,7 +4514,7 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Suspicions",
+      "title": "Clement Montesquieu Suspicions",
       "output": {
         "generic": [
           {
@@ -4535,7 +4541,7 @@
           {
             "values": [
               {
-                "text": "<audio src=\"soundbank://soundlibrary/voices/crowds/crowds_04\"/>\n\nThe date is December 8th, 1864. As evening turns into night, the magnesium flares, which will commemorate the opening of the Clifton Suspension bridge, are being lit. You stand near the center of the bridge during the ceremony, a front row spot, which you got from Lord Elroy Grey, a prominent member of the Bristol Society of Merchant Venturers. The reason for your attendance and why you have such an upper class spot, is that you are a private detective hired by the society to observe the members of the bridge's trust. Someone in the charitable trust, originally set up by the society, is suspected of stealing funds for personal use, and your job is to discover the veracity of that suspicion and the culprit, should the suspicion be true.\n\n<audio src=\"soundbank://soundlibrary/weather/wind/wind_01\"/>\n\nAs you continue to observe the trust members for any signs of guilt and suspicion, suddenly a strong gust of wind blows out the magnesium flares, returning the entire event to the darkness of night. In the darkness you lose sight of the six trust members and resign yourself to wait it out. \n\n<audio src=\"soundbank://soundlibrary/explosions/fire/fire_07\"/>\n\nAfter 10 minutes the flares are lit again and you can see once more, immediately taking the opportunity to lock onto the trust members again. However you and the trust's members begin to notice something strange, one of them is missing. Henry Deadman, a successful Bristol business man appears to be gone. \n\n<audio src=\"soundbank://soundlibrary/voices/crowds/crowds_12\"/>\n\nYou decide to look around for where he could be, pondering why he would suddenly leave the venue, but soon gasps are heard from the crowd as a group of men carrying a body approach the bridge. The body is none other than that of Henry Deadman. The men explain that they were watching the unveiling of the bridge from the gorge it spans when they heard something hit the ground near them. They quickly investigated and found that it was a dead body. They realized that the man must have fallen from the bridge, a thing, which even with the lack of light, would have been improbable. Unless of course he was pushed. The crowd seems to quickly reach the same conclusion, and before long the death has been declared a murder. But if he really was pushed off the bridge, the only one in a position to do so would have been the other members of the trust. The members seem to realize this as well and are beginning to cast glances of suspicion at each other. Before this gets out of hand, you decide to introduce yourself and resolve this mystery. You are a detective after all.\n"
+                "text": "<audio src=\"soundbank://soundlibrary/voices/crowds/crowds_04\"/>\n\nThe date is December 8th, 1864. As evening turns into night, the magnesium flares, which will commemorate the opening of the Clifton Suspension bridge, are being lit. You stand near the center of the bridge during the ceremony, a front row spot, which you got from Lord Felix Grey, a prominent member of the Bristol Society of Merchant Venturers. The reason for your attendance and why you have such an upper class spot, is that you are a private detective hired by the society to observe the members of the bridge's trust. Someone in the charitable trust, originally set up by the society, is suspected of stealing funds for personal use, and your job is to discover the veracity of that suspicion and the culprit, should the suspicion be true.\n\n<audio src=\"soundbank://soundlibrary/weather/wind/wind_01\"/>\n\nAs you continue to observe the trust members for any signs of guilt and suspicion, suddenly a strong gust of wind blows out the magnesium flares, returning the entire event to the darkness of night. In the darkness you lose sight of the six trust members and resign yourself to wait it out. \n\n<audio src=\"soundbank://soundlibrary/explosions/fire/fire_07\"/>\n\nAfter 10 minutes the flares are lit again and you can see once more, immediately taking the opportunity to lock onto the trust members again. However you and the trust's members begin to notice something strange, one of them is missing. Henry Deadman, a successful Bristol business man appears to be gone. \n\n<audio src=\"soundbank://soundlibrary/voices/crowds/crowds_12\"/>\n\nYou decide to look around for where he could be, pondering why he would suddenly leave the venue, but soon gasps are heard from the crowd as a group of men carrying a body approach the bridge. The body is none other than that of Henry Deadman. The men explain that they were watching the unveiling of the bridge from the gorge it spans when they heard something hit the ground near them. They quickly investigated and found that it was a dead body. They realized that the man must have fallen from the bridge, a thing, which even with the lack of light, would have been improbable. Unless of course he was pushed. The crowd seems to quickly reach the same conclusion, and before long the death has been declared a murder. But if he really was pushed off the bridge, the only one in a position to do so would have been the other members of the trust. The members seem to realize this as well and are beginning to cast glances of suspicion at each other. Before this gets out of hand, you decide to introduce yourself and resolve this mystery. You are a detective after all.\n"
               }
             ],
             "response_type": "text",
