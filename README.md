@@ -1,4 +1,4 @@
-<img src="./resource/logo_name.svg" width="60%"/>
+<img src="./resource/logo.jpg" width="60%"/>
 
 In this day and age, technology advances faster than ever, but it creates a gap between the older and the younger generations. This results in social isolation between one another, which only worsens due to the recent pandemic and lockdowns. Our client Jon Mc Namara, who is an IBM employee, came up with this project to hopefully resolve this issue.
 
