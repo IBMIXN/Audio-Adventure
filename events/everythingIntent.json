@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "session": {
-    "new": false,
+    "new": true,
     "sessionId": "amzn1.echo-api.session.5d79c148-caa1-460c-875f-e7cd6ec582f4",
     "application": {
       "applicationId": "amzn1.ask.skill.70c90c47-8c77-48aa-b57c-2eb6ffdf495c"

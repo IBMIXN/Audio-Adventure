@@ -18,8 +18,8 @@ public class FallbackIntentHandler implements RequestHandler {
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
         return handlerInput.getResponseBuilder()
-                .withSpeech("test - not implemented")
-                .withReprompt("test - not implemented")
+                .withSpeech("Would you mind repeating that?")
+                .withReprompt("Would you mind repeating that?")
                 .build();
     }
 }
