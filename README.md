@@ -1,4 +1,4 @@
-# AudioAdventure
+# ![](./resource/logo.png)AudioAdventure
 
 In this day and age, technology advances faster than ever, but it creates a gap between the older and the younger generations. This results in social isolation between one another, which only worsens due to the recent pandemic and lockdowns. Our client Jon Mc Namara, who is an IBM employee, came up with this project to hopefully resolve this issue.
 
@@ -19,7 +19,11 @@ The game utilizes Watson Assistant (which incorporates Natural Language Understa
 ##### Configure AWS CLI & Docker
 1. Setup *AWS CLI* on your local machine and download *SAM* for easier Lambda function management
 . You can find tutorials [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). 
-You can find your *AWS CLI* tokens & passcode
+otherwise it is also possible to modify directly the config file located at `~/.aws/credentials
+`. You
+ can find
+ your *AWS
+ CLI* tokens & passcode
  in the AWS console.
 2. (Optional) Install docker if you want to debug and test the function locally, you can find
  more info on this [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-test-and-debug.html). **note**: don't forget to start Docker Daemon.  
@@ -39,5 +43,12 @@ responds to events coming from the Alexa Skill.
  deployment
 - You can now test the project using the Alexa web testing interface. To fire up the skill, ask
  Alexa `Ask Watson Bard for a story`. 
+ 
+##### Local Testing
+Make sure you have docker installed and the daemon running on the background, e.g.`sudo dockerd`  
+Run `sam local invoke -e events\help.json` to invoke the function with the given event. You can
+ also use alternative event.
+##### Clean up
+Run `aws cloudformation delete-stack --stack-name sam-app --region region`
 ### Acknowledgements
 + [IBM Alexa Skill & Watson Assistant Sample](https://github.com/IBM/alexa-skill-watson-assistant)

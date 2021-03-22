@@ -1,0 +1,88 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "watson bard",
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      },
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "What is this",
+            "I need some help",
+            "help me",
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "EverythingIntent",
+          "slots": [
+            {
+              "name": "EverythingSlot",
+              "type": "BAG_OF_WORDS"
+            }
+          ],
+          "samples": [
+            "{EverythingSlot}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "BAG_OF_WORDS",
+          "values": [
+            {
+              "name": {
+                "value": "done",
+                "synonyms": [
+                  "I want to wrap this up",
+                  "cease",
+                  "terminate",
+                  "close",
+                  "end",
+                  "Stop",
+                  "That's it",
+                  "I'm done",
+                  "finished"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "nothing",
+                "synonyms": [
+                  "absolutely nothing",
+                  "nothing at all"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Hello World"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

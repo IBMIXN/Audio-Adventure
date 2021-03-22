@@ -17,9 +17,13 @@ public class NavigateHomeIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
+        var reply  = "The case of Henry Deadman remains unsolved and there're alleged " +
+                "witness of his ghost wandering on the top of the Clifton Suspension Bridge till " +
+                "today.";
         return handlerInput.getResponseBuilder()
-                .withSpeech("test - not implemented")
-                .withReprompt("test - not implemented")
+                .withShouldEndSession(true)
+                .withSpeech(reply)
+                .withReprompt("Better luck next time")
                 .build();
     }
 }

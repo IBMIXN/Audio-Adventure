@@ -11,6 +11,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.InputStream;
+import java.rmi.server.ExportException;
 
 /**
  * Config contains various api keys for Alexa & Watson service requests
@@ -39,7 +40,7 @@ public class Config {
      * @return InputStream
      */
     private InputStream loadResource(String fileName) {
-        return getClass().getResourceAsStream(fileName);
+        return Config.class.getResourceAsStream(fileName);
     }
 
     /**
@@ -73,5 +74,15 @@ public class Config {
             e.printStackTrace();
         }
         return str;
+    }
+
+    @Override
+    public String toString() {
+        return "Config{" +
+                "ALEXA_SKILL_ID='" + ALEXA_SKILL_ID + '\'' +
+                ", WATSON_API_KEY='" + WATSON_API_KEY + '\'' +
+                ", WATSON_SERVICE_URL='" + WATSON_SERVICE_URL + '\'' +
+                ", WATSON_ASSISTANT_ID='" + WATSON_ASSISTANT_ID + '\'' +
+                '}';
     }
 }

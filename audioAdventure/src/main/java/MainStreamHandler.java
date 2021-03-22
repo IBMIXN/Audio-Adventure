@@ -1,11 +1,12 @@
 
 import com.amazon.ask.Skill;
-import com.amazon.ask.builder.CustomSkillBuilder;
+import com.amazon.ask.Skills;
 import com.amazon.ask.SkillStreamHandler;
 import handlers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.Config;
+import watsonHandler.WatsonHandlerImpl;
 
 /**
  * Entry point for AWS Lambda
@@ -16,15 +17,22 @@ public class MainStreamHandler extends SkillStreamHandler {
 
     private static Skill getSkill() {
         logger.info("Skill Stream Handler Initialized");
-        return new CustomSkillBuilder()
+
+        return Skills.standard()
                 .withSkillId(config.ALEXA_SKILL_ID)
                 .addRequestHandlers(
-                        new EverythingIntentHandler(config),  // intent for audio adventure
+                        new EverythingIntentHandler(new WatsonHandlerImpl(config)),  // intent for
+                                // audio adventure
                         new HelpIntentHandler(),
                         new CancelAndStopIntentHandler(),
-                        new FallbackIntentHandler(),
-                        new NavigateHomeIntentHandler()
+                        new NavigateHomeIntentHandler(),
+                        new FallbackIntentHandler()
                 )
+                .addRequestInterceptor(new NewSessionInterceptor())
+                .addResponseInterceptor(new SaveSessionInterceptor())
+                // Add persistent storage support
+                .withAutoCreateTable(true)
+                .withTableName("AudioAdventure")
                 .build();
 
     }

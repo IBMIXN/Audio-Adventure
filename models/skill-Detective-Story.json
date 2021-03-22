@@ -1,0 +1,4628 @@
+{
+  "intents": [
+    {
+      "intent": "Puzzle1Answer",
+      "examples": [
+        {
+          "text": "Nothing"
+        },
+        {
+          "text": "nothing is the answer"
+        },
+        {
+          "text": "The answer is nothing"
+        },
+        {
+          "text": "there is nothing that fits that description"
+        },
+        {
+          "text": "the solution to the riddle is in fact nothing"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "CheckpointOptions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Accusation",
+          "synonyms": [
+            "Accusation ",
+            "I want to accuse people ",
+            "I want to go to the end",
+            "The accusation part",
+            "to the end",
+            "to the last part"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Introduction",
+          "synonyms": [
+            "Introduction",
+            "I want to go back to the beginning",
+            "I want to go back to the Introduction",
+            "I want to go back to the start",
+            "I want to start from the beginning",
+            "The beginning",
+            "the start",
+            "to the first part"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Questioning",
+          "synonyms": [
+            "Asking Questions",
+            "I want to ask questions",
+            "I want to go back to questioning",
+            "I want to go to Questioning",
+            "I want to question",
+            "I want to question the witnesses",
+            "Questioning",
+            "The Questioning Part"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Control1Secret",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "8d8763cb3aa452b743c594f370c347b8",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "Control2Secret",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "db315b07dddf87159c2238612325a242",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "Explanations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Blackmail",
+          "synonyms": [
+            "Black mail",
+            "Elory Grey",
+            "Elroy Grey blackmailed him",
+            "Elroy grey is behind this",
+            "Elroy Grey is the true culprit",
+            "Elroy Grey is the true murderer",
+            "Elroy Grey made Henry kill himself",
+            "Elroy Grey made him",
+            "Elroy Grey made him do it",
+            "Elroy Grey was behind this",
+            "He was blackmailed into killing himself",
+            "It was blackmail",
+            "It was Elroy Grey",
+            "Lord Grey blackmailed him",
+            "Lord Grey is behind it",
+            "Lord Grey is behind this",
+            "Lord Grey is the true culprit",
+            "Lord Grey is the true murderer",
+            "Lord Grey made him",
+            "Mister Grey Blackmailed him"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Suicide",
+          "synonyms": [
+            "he commited suicide",
+            "he did it himself",
+            "he did it on his own",
+            "he did it to himself",
+            "He jumped on his own",
+            "he killed himself",
+            "It was a suicide"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "PressOrRelent",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Press",
+          "synonyms": [
+            "anything else",
+            "don't hold back",
+            "don't lie ",
+            "don't lie to me",
+            "don't stop",
+            "don't stop now",
+            "even more",
+            "give me everything you have",
+            "give me more",
+            "go on",
+            "I am pressing for more",
+            "I am pushing for more",
+            "I'm pressing for more",
+            "I'm pushing for more",
+            "I need more",
+            "I need more info",
+            "I need more information",
+            "I want more",
+            "I want more info",
+            "I want more information",
+            "I want to know everything",
+            "I want to know it all",
+            "I want to know more",
+            "keep going",
+            "keep it up",
+            "keep on",
+            "keep up",
+            "more",
+            "not enough",
+            "press",
+            "push",
+            "say more",
+            "say something more",
+            "tell me even more",
+            "Tell me everything",
+            "tell me more",
+            "that's not all",
+            "That's not enough",
+            "you are lying",
+            "you are lying to me",
+            "you are not being completely truthful ",
+            "you are not being truthful",
+            "you're lying",
+            "you're lying to me",
+            "you're not being completely truthful",
+            "you're not being truthful"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Puzzle1Answer",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Nothing",
+          "synonyms": [
+            "it is nothing",
+            "it's nothing",
+            "nothing is the answer",
+            "the answer is nothing"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Puzzle2Answer",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Coffin",
+          "synonyms": [
+            "a buriel chamber",
+            "a buriel place",
+            "a casket",
+            "A Coffin",
+            "A coffin is the answer",
+            "a grave",
+            "a sarcophagus",
+            "a tomb",
+            "a tombstone",
+            "it is a coffin",
+            "it's a coffin",
+            "the answer is a casket",
+            "The answer is a coffin",
+            "the answer is a grave",
+            "the answer is a sarcophagus",
+            "the answer is a tomb"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "QuestioningOptions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Clement Montesquieu",
+          "synonyms": [
+            "Clement",
+            "Clement Montesquieu",
+            "Monsieur Montesquieu",
+            "Montesquieu",
+            "Mr. Montesquieu",
+            "The French Guy",
+            "The frenchman"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Constantine Bridgewater",
+          "synonyms": [
+            "Bridgewater",
+            "Constantine",
+            "Constantine Bridgewater",
+            "Mr. Bridgewater"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Done",
+          "synonyms": [
+            "end",
+            "end questioning",
+            "I am done questioning",
+            "I am done questioning now",
+            "I am done with questioning",
+            "I have finished",
+            "I'm done",
+            "I'm done questioning",
+            "I'm finished",
+            "I'm finished questioning",
+            "I've finished",
+            "I want to cease questioning",
+            "I want to close this up",
+            "I want to terminate questioning",
+            "I want to wrap this up",
+            "I would like to stop questioning",
+            "stop",
+            "stop questioning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Don't know",
+          "synonyms": [
+            "I am not sure",
+            "I do not have an answer",
+            "I don't have an answer",
+            "I don't know",
+            "I'm not sure",
+            "not sure"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Elizabeth Wilde",
+          "synonyms": [
+            "Elizabeth",
+            "Ms. Wilde",
+            "Wilde"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Felix Grey",
+          "synonyms": [
+            "Felix",
+            "Grey",
+            "Lord Felix",
+            "Lord Felix Grey",
+            "Lord Grey",
+            "Mister Felix Grey",
+            "Mr. Felix Grey",
+            "Mr. Grey",
+            "The Lord",
+            "the noble",
+            "The nobleman"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Henry Deadman",
+          "synonyms": [
+            "Deadman",
+            "He did it to himself",
+            "He killed himself",
+            "Henry",
+            "Henry did it to himself",
+            "henry killed himself",
+            "It was a suicide",
+            "Mister Deadman",
+            "Mister Henry Deadman",
+            "Mr. Deadman",
+            "Mr. Deadman killed himself",
+            "Mr. Henry Deadman",
+            "The dead man",
+            "The murder victim",
+            "The victim",
+            "The victim is the culprit",
+            "The victim is the murderer "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Horton Gumshoe",
+          "synonyms": [
+            "Constable Gumshoe",
+            "Constable Horton",
+            "Constable Horton Gumshoe",
+            "Gumshoe",
+            "Horton",
+            "Mister Gumshoe",
+            "Mister Horton Gumshoe",
+            "Mr. Gumshoe",
+            "Mr. Horton Gumshoe",
+            "The Constable",
+            "The Officer",
+            "The Police Officer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lawrence Astor",
+          "synonyms": [
+            "Astor",
+            "Lawrence",
+            "Mister Lawrence Astor",
+            "Mr. Astor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nobody",
+          "synonyms": [
+            "nobody is the culprit",
+            "nobody is the murderer",
+            "There is no culpirt",
+            "There is no murderer",
+            "there isn't a culprit",
+            "there isn't a murderer",
+            "There's no culprit",
+            "There's no murderer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Olivia Winterton",
+          "synonyms": [
+            "Duchess Olivia Winterton",
+            "Duchess Winterton",
+            "Mrs. Winterton",
+            "Olivia",
+            "Widow Olivia Winterton",
+            "Widow Winterton",
+            "Winterton"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Self",
+          "synonyms": [
+            "I am the culprit",
+            "I am the murderer",
+            "I dit it",
+            "It's me",
+            "It was me",
+            "the culprit was me",
+            "the murderer was me"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "you",
+          "synonyms": [
+            "it was you",
+            "I want to question you",
+            "let me question you",
+            "you",
+            "you are the culprit",
+            "you are the murderer",
+            "you did it "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Questions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Backstory",
+          "synonyms": [
+            "How did you become a member of the trust",
+            "how did you get into the trust",
+            "How did you join the trust",
+            "Tell me about yourself",
+            "tell me about your work",
+            "tell me of yourself",
+            "tell me what you do",
+            "tell me why you joined the trust",
+            "what do you do",
+            "what do you work in",
+            "what is your backstory",
+            "what is your business",
+            "what is your career",
+            "what is your job",
+            "what is your profession",
+            "what is your story",
+            "what's your backstory",
+            "what's your profession",
+            "what's your story",
+            "who are you",
+            "why are you part of the trust",
+            "why did you join the trust",
+            "your story"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Stop",
+          "synonyms": [
+            "Can I question another person",
+            "can I question someone else",
+            "can we move on to someone else",
+            "done",
+            "enough",
+            "I am good",
+            "I have enough",
+            "I have enough information",
+            "I have finished questioning you",
+            "I'm done",
+            "I'm done questioning you ",
+            "I'm done with you",
+            "I'm ending the questioning",
+            "I'm going to move on",
+            "I'm going to move on to someone else",
+            "I'm going to stop questioning you",
+            "I'm good",
+            "I've finished questioning you",
+            "I want to move on to someone else",
+            "I want to question someone else",
+            "I want to stop questioning you",
+            "let's end ",
+            "let's end the questioning",
+            "let's stop",
+            "let us move on",
+            "let us stop",
+            "Nothing more",
+            "someone else",
+            "Stop",
+            "Stop Questioning",
+            "That's all from me know",
+            "Yes",
+            "Yes it is"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Suspicions",
+          "synonyms": [
+            "any leads",
+            "anyone sus",
+            "any opinions",
+            "any thoughts",
+            "do you have an opinion on who the killer is",
+            "do you have an opinion on who the murderer is",
+            "do you have any suspicions",
+            "is anyone sus",
+            "what do you think",
+            "who did it",
+            "who do you suposse did it",
+            "who do you suposse is the culprit",
+            "who do you suposse is the murderer",
+            "who do you suposse killed Henry",
+            "who do you suspect",
+            "who do you think did it",
+            "who do you think is guilty",
+            "who do you think is sus",
+            "who do you think is the killer",
+            "who do you think is the purpetrator",
+            "who do you think killed Deadman",
+            "who do you think killed Henry",
+            "who do you think killed Henry Deadman",
+            "who do you think killed mister Deadman",
+            "who do you think killed Mr. Deadman",
+            "who do you think killed the victim",
+            "who do you think murdered Deadman",
+            "who do you think murdered Henry",
+            "who do you think murdered Henry Deadman",
+            "who do you think murdered mister deadman",
+            "who do you think murdered the victim",
+            "who do you think offed deadman",
+            "who do you think offed henry",
+            "who do you think offed henry deadman",
+            "who do you think offed mister deadman",
+            "who do you think offed mr. Deadman",
+            "who do you think offed the victim",
+            "who do you think the perp is",
+            "who killed deadman",
+            "who killed henry",
+            "who killed henry deadman",
+            "who killed mister deadman",
+            "who killed mr. Deadman",
+            "who killed the victim",
+            "who offed deadman",
+            "who offed henry",
+            "who offed henry deadman",
+            "who offed mister deadman",
+            "who offed mr. Deadman",
+            "who offed the victim",
+            "who's guilty",
+            "who's the killer",
+            "who's the perp",
+            "who you think murdered Mr. Deadman"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Victim Relation",
+          "synonyms": [
+            "do you henry deadman",
+            "do you know Henry",
+            "do you know Henry Deadman",
+            "do you know mister Deadman",
+            "do you know Mr. Deadman",
+            "do you know the dead guy",
+            "do you know the guy that died",
+            "do you know the victim",
+            "how do you Henry",
+            "how do you know Deadman",
+            "how do you know Henry Deadman",
+            "how do you know mister deadman",
+            "how do you know Mr. Deadman",
+            "how do you know the dead guy",
+            "how do you know the guy that died",
+            "how do you know the victim",
+            "tell me how you know henry",
+            "tell me how you know Henry Deadman",
+            "tell me how you know mister Deadman",
+            "tell me how you know Mr. Deadman",
+            "tell me how you know the victim",
+            "the victim relation",
+            "what is your realation to the guy that died",
+            "what is your relationship to the dead guy",
+            "what is your relationship with Deadman",
+            "what is your relationship with Henry Deadman",
+            "what is your relationship with Mister Deadman",
+            "what is your relationship with Mr. Deadman",
+            "what is your relationship with the victim",
+            "what is your relation to Deadman",
+            "what is your relation to henry",
+            "what is your relation to Henry Deadman",
+            "what is your relation to Mr. Deadman ",
+            "what is your relation to the dead guy",
+            "what is your relation to the victim",
+            "what is your relation with Mister Deadman",
+            "what is your victim relation",
+            "what's your relationship to the dead guy",
+            "what's your relationship to the guy that died",
+            "what's your relationship with henry",
+            "what's your relationship with Henry Deadman",
+            "what's your relationship with Mister Deadman",
+            "what's your relationship with the dead guy",
+            "what's your relationship with the victim",
+            "what's your relation to Deadman",
+            "what's your relation to henry",
+            "what's your relation to Henry Deadman",
+            "what's your relation to Mister Deadman",
+            "what's your relation to Mr. Deadman",
+            "what's your relation to the dead guy",
+            "what's your relation to the guy that died",
+            "What's your relation to the victim",
+            "your victim relation"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "YesOrNo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "go back",
+            "I am not certain",
+            "I am not sure",
+            "I want to go back",
+            "let me think it over again",
+            "stop"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "I am certain",
+            "I'm certain",
+            "I'm sure",
+            "Okay",
+            "Sure",
+            "Ye",
+            "Yea",
+            "Yeah",
+            "Yep",
+            "yes I am certain",
+            "Yes I am sure",
+            "Yes, I am sure"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Puzzle 1 Intro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "After you introduced yourself, and explained that you are a detective, you see a man wearing a murky green overcoat approaching you.\n<audio src=\"soundbank://soundlibrary/human/amzn_sfx_human_walking_03\"/>\nYou recognize him as Lawrence Astor, a member of the bridge's trust, and a prominent Bristol business man. He begins to speak to you.\n<voice name= \"Matthew\">If you are really the detective you say you are, then I'm sure you can prove it. If you can solve this riddle, I believe it will ease our minds a little. </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1606828329151"
+      },
+      "conditions": "",
+      "dialog_node": "Anything else",
+      "previous_sibling": "Welcome",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Suspicions Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_99_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_100_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Suspicions Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">Out of curiosity, I once had someone purchase one of her pieces, she deals in antiques you see. I had a friend of mine examine it only to find that was nothing more than a fake. This isn’t necessarily connected to the murder but I should mention that while Monsieur Deadman was a customer of mine, he did not ever purchase anything from her.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_99_1611837880746",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_101_1611837880746",
+      "previous_sibling": "node_100_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Suspicions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I see you’re curious as to who I think did it. I did say you could ask, but I’m afraid I’m not in the business of dealing in rumors.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606839292573",
+      "conditions": "@Questions:Suspicions",
+      "dialog_node": "node_10_1608733420797",
+      "previous_sibling": "node_9_1608733405652"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory Relent 1",
+      "parent": "node_8_1608733404242",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_10_1608803009054"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory Relent 2",
+      "parent": "node_1_1608739092011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_10_1608803033548"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation Relent 2",
+      "parent": "node_7_1608804953741",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_10_1608804957639"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Advice",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You could try asking about how she became a member of the trust, or her relation to the victim, or even who she thinks might have done it. After you get an answer you can either relent and accept what she’s said, or you could press for more, in this case, highly encouraged. You could also try questioning someone else if you wanted.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1611833189098",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "dialog_node": "node_10_1611833284698"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">You see, our friendship came from our mutual love for art. We were both avid customers of Monsieur Montesquieu. We sometimes drank tea together, and talked about our favorite pieces for hours on end. Henry had quite a collection, but not as good as the collection my husband left me.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1611834095238",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_10_1611834095238",
+      "previous_sibling": "node_9_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Relent 4",
+      "parent": "node_14_1611834095238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_10_1612968400124"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Press 4",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">I apologise, that is all I can bear to remember of him</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1611834095238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_10_1612968404461",
+      "previous_sibling": "node_10_1612968400124"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 2 Success",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">So you aren’t making a fool of me. As I explained earlier, I’m in charge of investigating Mr. Deadman’s murder, although I suppose, being the brilliant detective that you are, you’ve already solved this case, have you?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1613217401396",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@Puzzle2Answer:Coffin",
+      "dialog_node": "node_10_1613217417550",
+      "previous_sibling": "node_1_1613217415188"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Accused ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">Sacrebleu, what could possibly lead you to this conclusion? Are you certain you mean to accuse me?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Clement Montesquieu)",
+      "dialog_node": "node_10_1613224888005",
+      "previous_sibling": "node_7_1613224881010"
+    },
+    {
+      "type": "standard",
+      "title": "Choice not understood",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">That doesn’t make any sense, give me a real answer.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@QuestioningOptions != \"Self\" &&              @QuestioningOptions != \"Horton Gumshoe\" &&             @QuestioningOptions != \"Don't know\" &&            @QuestioningOptions != \"Nobody\" &&           @QuestioningOptions != \"Henry Deadman\" &&         @QuestioningOptions != \"Olivia Winterton\" &&        @QuestioningOptions != \"Lawrence Astor\" &&       @QuestioningOptions != \"Elizabeth Wilde\" &&      @QuestioningOptions != \"Constantine Bridgewater\" &&     @QuestioningOptions != \"you\" &&  @QuestioningOptions != \"Clement Montesquieu\" && @QuestioningOptions != \"Felix Grey\"",
+      "dialog_node": "node_10_1613568476727"
+    },
+    {
+      "type": "standard",
+      "title": "To Introduction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@CheckpointOptions:Introduction",
+      "dialog_node": "node_10_1614593703788"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Suspicions Relent 2 ",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_101_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_102_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Suspicions Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">That is all.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_101_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_103_1611837880746",
+      "previous_sibling": "node_102_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation Relent 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fine, if you must know. I considered him a rival of sorts. When my father was alive our business always came out on top but I can’t say the same now. I want to be as successful as my father, as successful as Henry Deadman was, but I wouldn’t resort to underhanded tactics like this. I can’t very well beat my rival if he’s dead after all. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_98_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_105_1611838099499"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">Je ne sais plus, I have nothing more to tell you about this.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_98_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_106_1611838099500",
+      "previous_sibling": "node_105_1611838099499"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory Relent 3",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1608803062471",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_107_1611844944219"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Relent 2",
+      "output": {},
+      "parent": "node_10_1611834095238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_11_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">I think I rather dislike English humor.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1613224888005",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_11_1613224888006"
+    },
+    {
+      "type": "standard",
+      "title": "To Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@CheckpointOptions:Questioning",
+      "dialog_node": "node_11_1614593703788",
+      "previous_sibling": "node_10_1614593703788"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name= \"Matthew\"><prosody rate=\"slow\">What does man love more than life,<break time=\"500ms\"/> hate more than death or mortal strife;<break time=\"500ms\"/> that which contented men desire; <break time=\"500ms\"/> the poor have, <break time=\"500ms\"/> the rich require; <break time=\"500ms\"/> the miser spends, <break time=\"500ms\"/> the spendthrift saves, <break time=\"500ms\"/> and all men carry to their graves? </prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "",
+      "dialog_node": "node_1_1606828329151",
+      "previous_sibling": "Anything else"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You get right to the point don’t you. Don’t worry, I’m not a man of secrets.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@QuestioningOptions:(Lawrence Astor) || @QuestioningOptions:you",
+      "dialog_node": "node_1_1608738171713",
+      "previous_sibling": "node_6_1606839056326"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You wish to know even more about me? Alright, but there is not much more to say about myself, I’m simply a straight laced business man. If you’re curious about my black market comment, the person I meant is Ms. Wilde, but that hardly makes her the prime suspect.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1608733404242",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_1_1608739092011",
+      "previous_sibling": "node_10_1608803009054"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Suspicions Press",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I’m sorry, but even if I wanted to, I can’t deal in things I don’t have. I can’t think of anyone present who would do something like this, and yet it happened. The only thing I know for sure is that I didn’t do it. But I’m aware that’s not how this questioning business works.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1608733420797",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_1_1608805965842",
+      "previous_sibling": "node_3_1608805961852"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 2 Failure",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">What kind of lousy detective are you? You're lucky I’m feeling generous today, so I’ll give you another chance. Get it right this time.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Geraint\">Oh detective, this isn’t as difficult as you think, I’m sure you’ve solved cases much harder than this.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Geraint\">Could it be that you are feeling a bit under the weather today? Now is not to time, please concentrate</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1613217401396",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1613217401396"
+      },
+      "conditions": "@Puzzle2Answer != \"Coffin\"",
+      "dialog_node": "node_1_1613217415188"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Accused ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\"><prosody rate=\"fast\">Me? Why me? Why would I do it.</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Olivia Winterton)",
+      "dialog_node": "node_1_1613224873831",
+      "previous_sibling": "node_7_1613218121836"
+    },
+    {
+      "type": "standard",
+      "title": "Constable Gumshoe Accused",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">You are beginning to get on my nerves, detective. Do you really want to say that I did it?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Horton Gumshoe) || @QuestioningOptions:you",
+      "dialog_node": "node_1_1613567340118",
+      "previous_sibling": "node_10_1613224888005"
+    },
+    {
+      "type": "standard",
+      "title": "To Introduction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1614590771238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@CheckpointOptions:Introduction",
+      "dialog_node": "node_1_1614591723288"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">Does this talk of art interest you? I can openly tell you that I have inherited my enthusiasm for collecting from my late husband Oliver. He began his collection when he started to make a substantial sum of money from trading around 16 years ago and since then he had been steadily spending on new pieces until his death. His love for art is what got Monsieur Montesquieu a place in the trust, and now I continue to buy pieces from him, as well as antiques from Ms. Wilde, with the money Oliver left for me, bless his soul. </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1611834095238",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_12_1611834095238",
+      "previous_sibling": "node_11_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">Please, I do not want to rot in an English prison.</voice>\n<voice name=\"Geraint\"> Too late, lock the French-man away for the murder of Henry Deadman.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1613224888005",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1613224536362"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_12_1613224888006",
+      "previous_sibling": "node_11_1613224888006"
+    },
+    {
+      "type": "standard",
+      "title": "Not Understood",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your choice was not understood. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1614593703787"
+      },
+      "conditions": "@CheckpointOptions != \"Questioning\" &&  @CheckpointOptions != \"Introduction\" && @CheckpointOptions != \"Accusation\"",
+      "dialog_node": "node_12_1614593703788",
+      "previous_sibling": "node_6_1614593733715"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Relent 3",
+      "output": {},
+      "parent": "node_12_1611834095238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_13_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">Does this talk of art interest you? I can openly tell you that I have inherited my enthusiasm for collecting from my late husband Oliver. He began his collection when he started to make a substantial sum of money from trading around 16 years ago, and since then he had been steadily spending on new pieces until his death. His love for art is what got Monsieur Montesquieu a place in the trust, and now I continue to buy pieces from him, as well as antiques from Ms. Wilde, with the money Oliver left for me. Bless his soul.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1611834095238",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_14_1611834095238",
+      "previous_sibling": "node_13_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Felix Grey Accused ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Brian\"><prosody rate=\"fast\">Surely you jest, do you really mean that?</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Felix Grey)",
+      "dialog_node": "node_14_1613571993013",
+      "previous_sibling": "node_7_1613571616264"
+    },
+    {
+      "type": "standard",
+      "title": "Felix Grey Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Brian\"><prosody rate=\"fast\">I thought as much. Maybe you would like to tell us the real culprit now?</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1613571993013",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_15_1613571993014"
+    },
+    {
+      "type": "standard",
+      "title": "Felix Grey Explanation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Brian\"><prosody rate=\"fast\">I see. Apparently I am in a position where my own detective can now suddenly accuse me. Then I suppose you wouldn’t mind telling everyone how exactly I committed this murder, when I wasn’t even present. Go on then.</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1613571993013",
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_16_1613571993014",
+      "previous_sibling": "node_15_1613571993014"
+    },
+    {
+      "type": "standard",
+      "title": "Elroy Grey Not Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Brian\"><prosody rate=\"fast\">All that proves is that your accusation is baseless. Constable, arrest this man for the murder of Mr. Deadman, and for trying to tarnish my good reputation. </prosody></voice>\n<voice name=\"Geraint\">As he says men, take him away.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_16_1613571993014",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1613566869695"
+      },
+      "conditions": "@Explanations != \"Suicide\" && @Explanations != \"Blackmail\"",
+      "dialog_node": "node_17_1613571993014"
+    },
+    {
+      "type": "standard",
+      "title": "Elroy Grey Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Brian\"><prosody rate=\"fast\">This can’t be. How could you have figured that out.</prosody></voice>\n<voice name=\"Geraint\"> I take it you’re confessing then.</voice>\n<voice name=\"Brian\"><prosody rate=\"fast\">You will not, I am no murderer, I did not kill him.</prosody></voice>\n<voice name=\"Matthew\"> But you caused his suicide, to make it look like one of us did it. All so you could regain your lost power over the trust and eliminate a loose end.</voice>\n<voice name=\"Brian\"><prosody rate=\"fast\">What baseless accusations.</prosody></voice>\n<voice name=\"Matthew\"> I don’t think they are. Henry was the one stealing money from the trust, and he was stealing it for you. But when he decided he didn’t want to give you any more, and started spending a little too much on himself, you gave him an ultimatum. In the end, he chose his reputation over his life. The only fault in your plan was your own agent, this brilliant detective, who you underestimated just a little too much.</voice>\n<voice name=\"Brian\"><prosody rate=\"fast\">I have nothing more to say.</prosody></voice>\n<voice name=\"Geraint\">Arrest this man for the murder of Henry Deadman. Congratulations detective, it seems you solved this case after all.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_16_1613571993014",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1613566874308"
+      },
+      "conditions": "@Explanations:Suicide || @Explanations:Blackmail",
+      "dialog_node": "node_18_1613571993014",
+      "previous_sibling": "node_17_1613571993014"
+    },
+    {
+      "type": "standard",
+      "title": "Henry Deadman Accused ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Are you trying to say that Mr. Deadman took his own life? Are you certain of this?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Henry Deadman)",
+      "dialog_node": "node_20_1613572768890",
+      "previous_sibling": "node_14_1613571993013"
+    },
+    {
+      "type": "standard",
+      "title": "Henry Deadman Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Changed your mind, have you? Maybe I should start calling you the brilliant defective.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_20_1613572768890",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_21_1613572768891"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">So what do you want to know? Don’t hold back.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Anything else you’d like to ask about me?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Do you still need anymore information on me?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "conditions": "",
+      "dialog_node": "node_2_1606839292573",
+      "previous_sibling": "node_1_1608738171713"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">So it is my turn then? very well, I will tell you all I can.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@QuestioningOptions:(Constantine Bridgewater)",
+      "dialog_node": "node_2_1606839466947",
+      "previous_sibling": "node_38_1611834752406"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton End",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\"><prosody rate=\"slow\">If that is all, I will go back to mourning my dear friend Henry now.</prosody></voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1611833189098",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@Questions:Stop",
+      "dialog_node": "node_2_1611833286743",
+      "previous_sibling": "node_10_1611833284698"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">I suppose you’re wondering why I'm a member of the trust, but it’s rather simple actually. You see, I inherited the position from my late husband, duke Oliver Winterton, shortly after he passed away 14 years ago. The trust as a whole deemed it too tedious to recruit a whole new member, and I already knew some of the workings of the trust from Oliver.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1611833189098",
+      "conditions": "@Questions:Backstory",
+      "dialog_node": "node_2_1611833454660",
+      "previous_sibling": "node_2_1611833286743"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning Done Confirmed",
+      "parent": "node_7_1606839686233",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1613217352842"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_2_1613216774732",
+      "previous_sibling": "node_9_1613216772069"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Tell me what I am describing.<prosody rate=\"x-slow\">The person who makes it has no need for it, <break time=\"500ms\"/>the person who buys it has no use for it, <break time=\"500ms\"/>and the person who uses it cannot see or feel it.</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1613217401396",
+      "previous_sibling": "node_6_1613217352842"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\"><prosody rate=\"fast\">How uncouth of you to mock a grieving lady.</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1613224873831",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_2_1613224873833"
+    },
+    {
+      "type": "standard",
+      "title": "Very Bad Ending",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<audio src=\"soundbank://soundlibrary/human/amzn_sfx_people_walking_02\"/>\n\n<audio src=\"soundbank://soundlibrary/doors/doors_prison/prison_04\"/>\nAnd so, you were arrested, tried, and found guilty of the murder of Henry Deadman. The real killer is still free, and the case unsolved. As you sit on the damp stone in your cell you can’t help but wonder, that perhaps, if given another chance, you could solve this mystery and find out who really killed Henry Deadman.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1613566869695",
+      "previous_sibling": "node_5_1613217893234"
+    },
+    {
+      "type": "standard",
+      "title": "Constable Gumshoe Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">I didn’t think so, now tell me the actual culprit.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1613567340118",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_2_1613567340120"
+    },
+    {
+      "type": "standard",
+      "title": "To Questioning",
+      "parent": "node_5_1614590771238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@CheckpointOptions:Questioning",
+      "dialog_node": "node_2_1614591725318",
+      "previous_sibling": "node_1_1614591723288"
+    },
+    {
+      "type": "standard",
+      "title": "Henry Deadman Explanation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">I see, that does make quite a bit of sense actually.</voice>\n<voice name=\"Matthew\"> It makes even more sense when you consider that Henry was most likely the one stealing from the trust. Although that alone isn’t enough to prompt his death. Detective, do you have any lead on why exactly he killed himself.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_20_1613572768890",
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_22_1613572768891",
+      "previous_sibling": "node_21_1613572768891"
+    },
+    {
+      "type": "standard",
+      "title": "Henry Deadman Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\"> Well, I thought I would ask just to be sure. Perhaps this was only a suicide.</voice>\n<voice name=\"Geraint\"> Well then, I guess this concludes the investigation. Alright men, let's all go home. Well done detective, it seems you cleared this misunderstanding up, at least to some degree.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1613572768891",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1613566871152"
+      },
+      "conditions": " @Explanations != \"Blackmail\"",
+      "dialog_node": "node_23_1613572768891"
+    },
+    {
+      "type": "standard",
+      "title": "Henry Deadman Blackmail",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1613572768891",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1613571993014"
+      },
+      "conditions": "@Explanations:Blackmail",
+      "dialog_node": "node_24_1613572768891",
+      "previous_sibling": "node_23_1613572768891"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">I suppose I will comply, please proceed.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@QuestioningOptions:(Olivia Winterton)",
+      "dialog_node": "node_3_1606839422344",
+      "previous_sibling": "node_2_1606839292573"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I really have nothing more to say about this.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1608804960250",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_3_1608804968096",
+      "previous_sibling": "node_8_1608804966354"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Suspicions Relent",
+      "parent": "node_10_1608733420797",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_3_1608805961852"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Relent 1",
+      "output": {},
+      "parent": "node_2_1611833454660",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_3_1611833454661"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I’m afraid I really am out of things to say about myself. I’m really not the type that could go on and on talking about themselves.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1608803062471",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "dialog_node": "node_3_1611844937938",
+      "previous_sibling": "node_107_1611844944219"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I don’t think the constable is one for jokes. I wouldn’t try that again.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613218121836",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_3_1613222146626"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\"><prosody rate=\"fast\">Constable please, you can’t possibly believe this nonsense. I’m innocent. </prosody></voice>\n<voice name=\"Geraint\"> No, it makes too much sense, I bet you also murdered your husband, didn’t you. Take the duchess away for the murder of Henry Headman. </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1613224873831",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1613224536362"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_3_1613224873833",
+      "previous_sibling": "node_2_1613224873833"
+    },
+    {
+      "type": "standard",
+      "title": "Constable Gumshoe Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Since you can’t seem to give a straight answer right now, maybe some time in a cell will help you come to an appropriate conclusion. I know I have. Arrest this fraud at once, for the murder of Henry Deadman.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1613567340118",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1613566869695"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_3_1613567340120",
+      "previous_sibling": "node_2_1613567340120"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Suspicions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">Why? isn’t it obvious. The only one in the trust with a clear motive would be Mr. Astor, who else could have done it.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1611833189098",
+      "conditions": "@Questions:Suspicions",
+      "dialog_node": "node_33_1611834579602",
+      "previous_sibling": "node_8_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Suspicions Relent 1",
+      "output": {},
+      "parent": "node_33_1611834579602",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_34_1611834579603"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Suspicions Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">You ask why I say that? It is because they are both local businessmen, and with Henry out of the Mr. Astor’s profits would increase. It is a simple case of removing the competition.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_33_1611834579602",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_35_1611834579603",
+      "previous_sibling": "node_34_1611834579603"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Suspicions Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">I have said all I need on that, it is up to you whether you heed my advice.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_35_1611834579603",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_36_1611834671139",
+      "previous_sibling": "node_37_1611834708940"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Suspicions Relent 2 ",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_35_1611834579603",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_37_1611834708940"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Questioning ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">Is there anything you want to ask me?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Emma\">Anymore questions?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Emma\">Is there anything else you want to know about me? </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "dialog_node": "node_38_1611834752406",
+      "previous_sibling": "node_7_1606839445509"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Advice",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You could try asking about how she became a member of the trust, or her relation to the victim, or even who she thinks might have done it. After you get an answer, you can either relent and accept what she’s said, or you could press for more, even I’m curious as to what you’d find. You could also try questioning someone else if you wanted.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_38_1611834752406",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "dialog_node": "node_39_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde End",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">I hope what I’ve said has been able to shed some light on the present darkness.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_38_1611834752406",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@Questions:Stop",
+      "dialog_node": "node_40_1611834752409",
+      "previous_sibling": "node_39_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backstory ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">You’re curious as to how I became a member of the trust? Although very rare in this day and age, I am a moderately successful business woman. I started by working for some of the city’s various business men, including the late James Astor, Lawrence’s father. Then with the connections I made, I was able to start my own trading business 8 years ago. Due to my success in the business world, I became the 6th and last member of the trust 6 years ago.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_38_1611834752406",
+      "conditions": "@Questions:Backstory",
+      "dialog_node": "node_41_1611834752409",
+      "previous_sibling": "node_40_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">Well then, who do you want to question?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Anyone else you want to question?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Matthew\">Have you finished questioning? Let me know if you have or tell me who you want to question. But please, do take your time.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "gameState": "CheckPoint1"
+      },
+      "dialog_node": "node_4_1606839044209",
+      "previous_sibling": "node_5_1606830466020"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">Inheriting the position is really not that peculiar, it’s the same thing that happened with Lawrence after all, but I suppose you would like to know more about my husband. He was a local trader, as well as being a duke , and therefore became one of the origin members of the trust along with James Astor and Lord Grey.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1611833454660",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_4_1611833454661",
+      "previous_sibling": "node_3_1611833454661"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Accused",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">Do you really think that?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Elizabeth Wilde)",
+      "dialog_node": "node_4_1613224876889",
+      "previous_sibling": "node_1_1613224873831"
+    },
+    {
+      "type": "standard",
+      "title": "Self Accused",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">You’re confessing to the murder yourself? Are you being serious?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:Self",
+      "dialog_node": "node_4_1613567521434",
+      "previous_sibling": "node_1_1613567340118"
+    },
+    {
+      "type": "standard",
+      "title": "Nobody Blackmail",
+      "parent": "node_9_1613571616265",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1613571993014"
+      },
+      "conditions": "@Explanations:Blackmail",
+      "dialog_node": "node_4_1613571790762",
+      "previous_sibling": "node_8_1613571688448"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backstory Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_41_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_42_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backstory Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">You want to know what I deal in? Mainly antiques, but the occasional art piece as well if I can get it. I have various sources around the city from which I get my pieces from. Some of the stuff even comes from outside the country, but I only deal to people in Bristol and the surrounding area.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_41_1611834752409",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_43_1611834752409",
+      "previous_sibling": "node_42_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backstory Relent 2",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_43_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_44_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backstory Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">If I really have to say it, some of my sources are not the most reputable. And the same can be said for some of my pieces, but the people that buy them don’t know the difference, and that matter is wholly unrelated to the one at hand.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_43_1611834752409",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_45_1611834752409",
+      "previous_sibling": "node_44_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backstory Relent 3",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_45_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_46_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">I think you’ve got enough out of me, I have nothing more to say on that.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_45_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_47_1611834752409",
+      "previous_sibling": "node_46_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Victim Relation ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">I’m afraid I don’t really know Mr. Deadman outside of Trust Meetings. He was one of the few major businessmen in the city that I didn’t work under, and we’ve never had any dealings with each other. I however do know quite a few things about him if you’re interested.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_38_1611834752406",
+      "conditions": "@Questions:(Victim Relation)",
+      "dialog_node": "node_48_1611834752409",
+      "previous_sibling": "node_41_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Victim Relation Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_48_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_49_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Victim Relation Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">Mr. Deadman became a main competitor in the Bristol trading scene around 13 years ago. He was a small time trader 20 years ago, but he received some capital to expand from Lord Felix Grey, who at the time was still a member of the trust. A year later he succeeded Lord Grey, who resigned from the trust in order to focus more on his position in the Society of Merchant Venturer’s. Since then he has been a major part of the trust, as well as business in the city.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_48_1611834752409",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_50_1611834752409",
+      "previous_sibling": "node_49_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Victim Relation Relent 2",
+      "output": {},
+      "parent": "node_50_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_51_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning Intro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">The trust had a total of 6 members. Now 5 remaining. all present at the event. Starting with the women, the madame on the left is the regal Duchess Olivia Winterton, the widow of Duke Oliver Winterton, followed by the wonderful lady next to her, Elizabeth Wilde. The two men here are Constantine Bridgewater, the owner and overseer of the construction company in charge of building the bridge, and the Frenchman, Clément Montesquieu, an esteemed business man from France. As for the last living member, my name is Lawrence Astor, and I too am a businessman, although I keep things more local.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "dialog_node": "node_5_1606830466020",
+      "previous_sibling": "node_1_1606828329151"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor End",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">We’re done then, alright, I hope I was of service.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606839292573",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@Questions:Stop",
+      "dialog_node": "node_5_1608733402307",
+      "previous_sibling": "node_9_1608733398911"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Relent 2",
+      "output": {},
+      "parent": "node_4_1611833454661",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_5_1611833454661"
+    },
+    {
+      "type": "standard",
+      "title": "Choice",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">So then tell us, who killed Henry Deadman?</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "gameState": "CheckPoint2"
+      },
+      "dialog_node": "node_5_1613217893234",
+      "previous_sibling": "node_2_1613217401396"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I see. There’s nothing I can say that would make you think otherwise, I’m sorry I led you to this conclusion. </voice>\n<voice name=\"Geraint\"> I see, it’s so obvious. A simple case of eliminating the competition. Arrest this man for the murder of Henry Deadman.</voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613218121836",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1613224536362"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_5_1613222150039",
+      "previous_sibling": "node_3_1613222146626"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">Careful with those accusations, I don’t want my reputation ruined.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613224876889",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_5_1613224876890"
+    },
+    {
+      "type": "standard",
+      "title": "Self Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Then stop wasting my time.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613567521434",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_5_1613567521435"
+    },
+    {
+      "type": "standard",
+      "title": "Don't Know",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\"><prosody rate=\"fast\">What do you mean you don’t know. Try harder then.</prosody></voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@QuestioningOptions:(Don't know)",
+      "dialog_node": "node_5_1613568491538",
+      "previous_sibling": "node_10_1613568476727"
+    },
+    {
+      "type": "standard",
+      "title": "Control 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you wish to continue the game from the questioning of the witnesses or do you want to start over from the beginning?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "gameState": "New"
+      },
+      "conditions": "@Control1Secret:8d8763cb3aa452b743c594f370c347b8",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1614590771238"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Victim Relation Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">That’s all I know about him. I hope that information helps you in any way.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_50_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_52_1611834752409",
+      "previous_sibling": "node_51_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Suspicions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">If I had to cast any suspicion on any one, I would probably have to go with the widow Winterton. I can’t think of anything concrete about why she would kill Henry, he was friends with her Husband after all. But the amount of wealth she still has left over, and continually spends, strikes me as peculiar. </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_38_1611834752406",
+      "conditions": "@Questions:Suspicions",
+      "dialog_node": "node_55_1611834752409",
+      "previous_sibling": "node_48_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Suspicions Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_55_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_56_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Suspicions Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">I say this because she is an avid customer of mine, as well as Mr. Montesquieu’s businesses. The things we deal in are not exactly cheap, and Mr. Winterton was not the most successful business man despite being a member of the trust.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_55_1611834752409",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_57_1611834752409",
+      "previous_sibling": "node_56_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Suspicions Relent 2 ",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_57_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_58_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Suspicions Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">That’s all I can say on that.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_57_1611834752409",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_59_1611834752409",
+      "previous_sibling": "node_58_1611834752409"
+    },
+    {
+      "type": "standard",
+      "title": " Constantine Bridgewater Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">What would you like to ask me?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Hans\">Anything else you need? If so, ask away.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Hans\">Is that everything you needed to know from me?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "dialog_node": "node_60_1611836805378",
+      "previous_sibling": "node_2_1606839466947"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Advice",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You could try asking about how he became a member of the trust, or his relation to the victim, or even who he thinks might have done it. After you get an answer, you can either relent and accept what he’s said, or you could press for more. I think in his case, he would be glad to tell you all he knows. You could also try questioning someone else if you wanted.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_60_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "dialog_node": "node_61_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning Options",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">Your options are Olivia Winterton, Elizabeth Wilde, Constantine Bridgewater, Pierre Montesquieu, and myself, Lawrence Astor. Or you can end the questioning here. </voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@QuestioningOptions != \"Elizabeth Wilde\" &&         @QuestioningOptions != \"Lawrence Astor\" &&        @QuestioningOptions != \"Olivia Winterton\" &&       @QuestioningOptions != \"Constantine Bridgewater\" &&    @QuestioningOptions != \"Done\" &&   @QuestioningOptions != \"you\" && @QuestioningOptions != \"Clement Montesquieu\"",
+      "dialog_node": "node_6_1606839056326",
+      "previous_sibling": "node_7_1606839686233"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I’m sorry if I’m not the most interesting guy, but you’d be surprised to find that that’s actually a quite useful trait in the trading business. Most people don’t find the effort to dislike the ordinary. There are a few exceptions to that. For whatever reason Lord Grey seems to not like me, yet I have no problems with anyone else.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1608739092011",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_6_1608803062471",
+      "previous_sibling": "node_10_1608803033548"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">Fine, if you must know. I considered him a rival of sorts. When my father was alive our business always came out on top. But I can’t say the same now. I want to be as successful as my father, as successful as Henry Deadman was. But I wouldn’t resort to underhanded tactics like this. I can’t very well beat my rival if he’s dead after all.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1608804953741",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_6_1608804960250",
+      "previous_sibling": "node_10_1608804957639"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">My Oliver was a great businessman, he was never as acclaimed , or famous as others, but despite that he also brought in quite a bit of money. Because of this, I still have quite a bit of spending money, even after he has been gone for so long.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1611833454661",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_6_1611833454661",
+      "previous_sibling": "node_5_1611833454661"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 2 Intro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Just as questioning is about to be concluded, you and the members of the trust, turn to see a group of people barging through the crowd of onlookers still left. The group, compromised of several members of the local police, seems to be heading right for you. Among them, you also recognize Lord Elroy Grey, the member of the Society of Merchants Venturers who employed you to investigate the trust in the first place. \n<audio src=\"soundbank://soundlibrary/human/amzn_sfx_human_walking_03\"/>\nOne of the officers walks towards you, demanding to know who you are, and what your relation with the trust is. You and the members of the trust explain everything that has happened up until now to the discontented constable. He then looks you over, before beginning to speak.\n<voice name=\"Geraint\">So, you’re supposed to be a detective are you? Any detective I, Constable Horton Gumshoe, would recognize, is one that can answer this riddle of mine. Hope you’re up for the task, I would hate to lock you away as a fraud. Alright then, pay attention now.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1613217401396"
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1613217352842",
+      "previous_sibling": "node_4_1606839044209"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">I might occasionally sell fakes, but I’m no murder, constable, please.</voice>\n<voice name=\"Geraint\"> A judge will be the judge of that, now arrest this shady woman for the murder of Henry Deadman.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613224876889",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1613224536362"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_6_1613224876890",
+      "previous_sibling": "node_5_1613224876890"
+    },
+    {
+      "type": "standard",
+      "title": "Self Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Well then, I see no reason to keep this going. Arrest this so called detective for the murder of Henry Deadman.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1613567521434",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1613566869695"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_6_1613567521435",
+      "previous_sibling": "node_5_1613567521435"
+    },
+    {
+      "type": "standard",
+      "title": "Not Understood",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your choice was not understood. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1614590771238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1614590771238"
+      },
+      "conditions": "@CheckpointOptions != \"Questioning\" && @CheckpointOptions != \"Introduction\"",
+      "dialog_node": "node_6_1614591728104",
+      "previous_sibling": "node_2_1614591725318"
+    },
+    {
+      "type": "standard",
+      "title": "To Accusation",
+      "parent": "node_9_1614593703787",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@CheckpointOptions:Accusation",
+      "dialog_node": "node_6_1614593733715",
+      "previous_sibling": "node_11_1614593703788"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater End",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">I am glad I could help.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_60_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@Questions:Stop",
+      "dialog_node": "node_62_1611836805378",
+      "previous_sibling": "node_61_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Backstory ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">I would be happy to tell you about myself. I am originally from Prussia, but came here, to Bristol, 30 years ago along with some friends. We all joined a construction company run by a Prussian man, and we have been working there since. The company was hired by the trust to start construction on the towers, which are part of the bridge 28 years ago. Following their completion, he was appointed the 4th member of the trust by James Astor, Lawrence Astor’s father. When the owner of the company died, childless, 16 years ago, he placed the company in my hands, and I inherited the position on the trust as well.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_60_1611836805378",
+      "conditions": "@Questions:Backstory",
+      "dialog_node": "node_63_1611836805378",
+      "previous_sibling": "node_62_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Backstory Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_63_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_64_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Backstory Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">My apologies for the pause, let me continue where I left off. After funding was again secured for the bridge, my company was tasked with finishing it 2 years ago. And now here we stand. This should be a proud moment. But instead, this victory over nature is overshadowed by death.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_63_1611836805378",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_65_1611836805378",
+      "previous_sibling": "node_64_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Backstory Relent 2",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_65_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_66_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Backstory Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">That is all I have to say about myself.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_65_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_67_1611836805378",
+      "previous_sibling": "node_66_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\"> I’m sorry, but I only know Herr Deadman from trust meetings. He joined the trust 12 years ago, and was always pleasant with me the few times we spoke, unlike his predecessor.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_60_1611836805378",
+      "conditions": "@Questions:(Victim Relation)",
+      "dialog_node": "node_70_1611836805378",
+      "previous_sibling": "node_63_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_70_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_71_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 1 Failure",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name= \"Matthew\">Not quite, keep at it though, and you may yet convince me. Allow me to repeat the riddle.</voice>\n\n"
+              },
+              {
+                "text": "<voice name= \"Matthew\">That was incorrect, but don’t give up just yet, let me repeat it again.</voice>\n"
+              },
+              {
+                "text": "<voice name= \"Matthew\">Perhaps I overestimated you. Keep trying, you are better than this. </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606828329151",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1606828329151"
+      },
+      "conditions": "@Puzzle1Answer != \"Nothing\"",
+      "dialog_node": "node_7_1606830244644",
+      "previous_sibling": "node_9_1606828428226"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Emma\">So it’s my turn to be questioned? Very well then. Please begin.</voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@QuestioningOptions:(Elizabeth Wilde)",
+      "dialog_node": "node_7_1606839445509",
+      "previous_sibling": "node_7_1611833189098"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning Done",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">Are you sure you want to stop the questioning. </voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "conditions": "@QuestioningOptions:Done",
+      "dialog_node": "node_7_1606839686233"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">Not enough, alright then. The few times I have met him outside trust meetings, he was amicably to me, if a bit of a braggart, and the deals we made with each other were fair. He was good at making deals with people after all, I wish I was half as good as him at that.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1608733405652",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_7_1608804953741",
+      "previous_sibling": "node_8_1608804951886"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">Go on then.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Amy\">Have you had enough?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Amy\">Is that everything?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "dialog_node": "node_7_1611833189098",
+      "previous_sibling": "node_3_1606839422344"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\">I wouldn’t know anything more to tell you.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1611833454661",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_7_1611833835621",
+      "previous_sibling": "node_7_1611833858510"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Backstory Relent 3",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1611833454661",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_7_1611833858510"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Accused ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">My friend, you can’t possibly mean that?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Lawrence Astor)",
+      "dialog_node": "node_7_1613218121836",
+      "previous_sibling": "node_5_1613568491538"
+    },
+    {
+      "type": "standard",
+      "title": "Bad Ending",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<audio src=\"soundbank://soundlibrary/human/amzn_sfx_people_walking_02\"/>\n\n<audio src=\"soundbank://soundlibrary/doors/doors_prison/prison_04\"/>\nAnd so the accused was arrested, tried, and found guilty of the murder of Henry Deadman. You can’t help but feel as if you made a terrible mistake, that the real killer is still free, and the case unsolved. You can’t help but wonder, that perhaps, if given another chance, you could solve this mystery and find out who really killed Henry Deadman.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "dialog_node": "node_7_1613224536362",
+      "previous_sibling": "node_2_1613566869695"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Accused",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">You think it’s me? Have I perhaps offended you in any way?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:(Constantine Bridgewater)",
+      "dialog_node": "node_7_1613224881010",
+      "previous_sibling": "node_4_1613224876889"
+    },
+    {
+      "type": "standard",
+      "title": "Nobody Accused",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Are you certain, there isn’t anyone you want to accuse. Are you sure there is no culprit?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "conditions": "@QuestioningOptions:Nobody",
+      "dialog_node": "node_7_1613571616264",
+      "previous_sibling": "node_4_1613567521434"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">You wish for me to clarify that? I meant Lord Felix Grey, one of the original members of the trust. He gave his position to Herr Deadman so that he could retire from the trust. And I have to say that that has brought me some solace. He was never particularly nice to me, and was even rude on occasion.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_70_1611836805378",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_72_1611836805378",
+      "previous_sibling": "node_71_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation Relent 2",
+      "output": {},
+      "parent": "node_72_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_73_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">The reason for his treatment of me might stem from the fact that I joined the trust due to James Astor. He was the one to suggest my predecessor, and supported me as his replacement when he died. I have learned from the construction business that, while it is important to keep an overview of everything, one has to let others take responsibility and do their parts without directly controlling everyone. I believe Lord Grey does not share that sentiment, and did not appreciate someone else inviting members to the trust. This would also explain why he isn’t particularly pleasant with Herr Montesquieu either.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_72_1611836805378",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_74_1611836805378",
+      "previous_sibling": "node_73_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation Relent 3",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_74_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_75_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Victim Relation Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">I am out of things to say on that matter.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_74_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_76_1611836805378",
+      "previous_sibling": "node_75_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">I apologize, but I don’t really have any strong suspicions on who killed Herr Deadman.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_60_1611836805378",
+      "conditions": "@Questions:Suspicions",
+      "dialog_node": "node_77_1611836805378",
+      "previous_sibling": "node_70_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_77_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_78_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">If I have to give a name, I would give Herr Montesquieu’s, as he is the most different out of all the trust members, and also because Lord Grey isn’t here.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_77_1611836805378",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_79_1611836805378",
+      "previous_sibling": "node_78_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions Relent 2 ",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_79_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_80_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">What I mean by that is that, unlike myself, Herr Montesquieu never tried to fit in with local culture, something I consider important. I even changed my name to fit in more. I used to be called Constantine Brueckenwasser. As for Lord Grey, I never found him to be, how do you say, agreeable, by that I mean he was always unpleasant to me.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_79_1611836805378",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_81_1611836805378",
+      "previous_sibling": "node_80_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">So it is my time to answer. As you wish, Je suis pret.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@QuestioningOptions:(Clement Montesquieu)",
+      "dialog_node": "node_8_1606839496913",
+      "previous_sibling": "node_60_1611836805378"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Backstory",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">As I said earlier, I’m a local business man, have been most of my life. I inherited my father’s business when he passed away 10 years ago, and have been trying my hardest to grow it since. I’m at least moderately successful, otherwise I wouldn’t be a member of the trust. I say that, but in truth I inherited the position from my father who was one of the original members. I suppose you probably also want to know what I deal in, but the truth is I deal in most things, legal things that is, I’ve no interest in black market affairs, even if others might.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606839292573",
+      "conditions": "@Questions:Backstory",
+      "dialog_node": "node_8_1608733404242",
+      "previous_sibling": "node_5_1608733402307"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation Relent 1",
+      "parent": "node_9_1608733405652",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_8_1608804951886"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation Relent 3",
+      "parent": "node_6_1608804960250",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_8_1608804966354"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Amy\"><prosody volume=\"x-soft\">Oh, I was good friends with Henry. <prosody rate=\"slow\">I can hardly believe that he’s gone so suddenly.</prosody></prosody></voice>\nThe duchess almost begins to cry, but stops herself.\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1611833189098",
+      "conditions": "@Questions:(Victim Relation)",
+      "dialog_node": "node_8_1611834095238",
+      "previous_sibling": "node_2_1611833454660"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">I’m glad you’ve changed your mind.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613224881010",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_8_1613224881011"
+    },
+    {
+      "type": "standard",
+      "title": "True Ending",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<audio src=\"soundbank://soundlibrary/human/amzn_sfx_people_walking_02\"/>\n<audio src=\"soundbank://soundlibrary/doors/doors_prison/prison_04\"/>\n<audio src=\"soundbank://soundlibrary/bell/church/church_bells_06\"/>\nAnd so Lord Elroy Grey was arrested, tried, and found guilty of causing the suicide of Henry Deadman, as well as of stealing money from the bridge’s trust. You were able to discover and expose this using your exceptional skills as an expert detective, preventing the innocent trust members from paying for a crime they did not commit and bringing the true murderer to justice. Truly excellent detective work. Thank you for playing.\n<audio src=\"soundbank://soundlibrary/gameshow/gameshow_01\"/>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "dialog_node": "node_8_1613566874308",
+      "previous_sibling": "node_9_1613566871152"
+    },
+    {
+      "type": "standard",
+      "title": "Nobody Backed Off",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Alright then, out with it.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613571616264",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@YesOrNo:No || @YesOrNo != \"Yes\"",
+      "dialog_node": "node_8_1613571616265"
+    },
+    {
+      "type": "standard",
+      "title": "Nobody Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">What a shallow conjecture, give me a better answer, you third-rate detective.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1613571616265",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@Explanations != \"Suicide\" && @Explanations != \"Blackmail\"",
+      "dialog_node": "node_8_1613571685967"
+    },
+    {
+      "type": "standard",
+      "title": "Nobody Suicide",
+      "parent": "node_9_1613571616265",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_20_1613572768890"
+      },
+      "conditions": "@Explanations:Suicide",
+      "dialog_node": "node_8_1613571688448",
+      "previous_sibling": "node_8_1613571685967"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions Relent 3",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_81_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_82_1611837065211"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Suspicions Press 3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">Nothing more comes to mind.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_81_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_83_1611837105371",
+      "previous_sibling": "node_82_1611837065211"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Questioning",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">Please, make this quick.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Mathieu\">Finished yet? I don’t have all day</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Mathieu\">Is that all?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "dialog_node": "node_84_1611837880744",
+      "previous_sibling": "node_8_1606839496913"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Advice",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You could try asking about how he became a member of the trust, or his relation to the victim, or even who he thinks might have done it. After you get an answer, you can either relent and accept what he’s said, or you could press for more, but I don’t recommend asking his opinion on English society. You could also try questioning someone else if you wanted.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_84_1611837880744",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "dialog_node": "node_85_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu End",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">Tres Bien, I hope you have what you need.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_84_1611837880744",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@Questions:Stop",
+      "dialog_node": "node_86_1611837880746",
+      "previous_sibling": "node_85_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Pierre Montesquieu Backstory ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">If we do not count replacements and inheritances, I am the 5th member of the trust. I was appointed to the trust by the late Duke Winterton, 15 years ago. The reason for that being my success in the art trading scene, both in Paris and here in Bristol.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_84_1611837880744",
+      "conditions": "@Questions:Backstory",
+      "dialog_node": "node_87_1611837880746",
+      "previous_sibling": "node_86_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Backstory Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_87_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_88_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Backstory Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">If you must know. The reason that the Duke invited me to the trust was because of his interest in buying art. After he became bored of the local sellers, he branched out, and we met at an art gala in Paris. Following that he invited me to Bristol, and despite not being of English blood he, as an original member, made me a member of the trust as well.</voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_87_1611837880746",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_89_1611837880746",
+      "previous_sibling": "node_88_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Backstory Relent 2",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_89_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_90_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Backstory Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">I doubt you would be interested in anything more about me.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_89_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_91_1611837880746",
+      "previous_sibling": "node_90_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 1 Success",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name= \"Matthew\">Excellent work, very impressive. I suppose the next step is for you to question all the members of the trust. Allow me to introduce us then.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606828329151",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1606830466020"
+      },
+      "conditions": "@Puzzle1Answer:Nothing",
+      "dialog_node": "node_9_1606828428226"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Advice",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">You could try asking about how I became a member of the trust, or my relation to the victim, or even who I think might have done it. After you get an answer, you can either relent and accept what I’ve said or you could press for more, go ahead, I have nothing to hide. You could also try questioning someone else if you wanted.</voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606839292573",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@Questions != \"Stop\" &&   @Questions != \"Backstory\" &&  @Questions != \"Victim Relation\" && @Questions != \"Suspicions\"",
+      "dialog_node": "node_9_1608733398911"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Victim Relation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">I’ve known Mr. Deadman for quite some time, at least in the business world. My father, when he was still alive, knew him, and I exchanged goods and money with him a few times as well, but I didn’t know him personally.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606839292573",
+      "conditions": "@Questions:(Victim Relation)",
+      "dialog_node": "node_9_1608733405652",
+      "previous_sibling": "node_8_1608733404242"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Victim Relation Relent 1",
+      "output": {},
+      "parent": "node_8_1611834095238",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_9_1611834095238"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning Done Back Off",
+      "parent": "node_7_1606839686233",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@YesOrNo != \"Yes\" || @YesOrNo:No",
+      "dialog_node": "node_9_1613216772069"
+    },
+    {
+      "type": "standard",
+      "title": "Constantine Bridgewater Finished",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Hans\">I’m a simple, hardworking man, what would I gain from killing a colleague?</voice>\n<voice name=\"Geraint\"> Why would I know that, you’re the one who killed him. Now arrest him for the murder of Henry Deadman.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613224881010",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1613224536362"
+      },
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_9_1613224881011",
+      "previous_sibling": "node_8_1613224881011"
+    },
+    {
+      "type": "standard",
+      "title": "Good Ending",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<audio src=\"soundbank://soundlibrary/footsteps/concrete/concrete_01\"/>\n<audio src=\"soundbank://soundlibrary/voices/human/human_05\"/>\nAnd so nobody was arrested, nobody was tried, and nobody was found guilt of the murder of Henry Deadman. Using your skills as a detective, you managed to figure out that it was really a suicide, preventing the innocent trust members from paying for a crime they did not commit. For whatever reason, a lingering thought remains, that potentially there was more to this case than even you realized. You can’t help but wonder, that perhaps, if given another chance, you could solve this mystery and discover the whole truth.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "dialog_node": "node_9_1613566871152",
+      "previous_sibling": "node_7_1613224536362"
+    },
+    {
+      "type": "standard",
+      "title": "Nobody Explanation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">I’m going to need you to explain yourself, how can there not be a culprit?</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1613571616264",
+      "conditions": "@YesOrNo:Yes",
+      "dialog_node": "node_9_1613571616265",
+      "previous_sibling": "node_8_1613571616265"
+    },
+    {
+      "type": "standard",
+      "title": "Control 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you wish to continue the game from the questioning of the witnesses, or from the part where you accuse them, or do you want to start over from the beginning?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "gameState": "New"
+      },
+      "conditions": "@Control2Secret:db315b07dddf87159c2238612325a242",
+      "dialog_node": "node_9_1614593703787",
+      "previous_sibling": "node_5_1614590771238"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">In addition to both being members of the trust. Monsieur Deadman was one of my best clients for some time. He, like the Duchess and her husband before her, came to me to purchase only the finest pieces of art, that could not be bought from anyone else.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_84_1611837880744",
+      "conditions": "@Questions:(Victim Relation)",
+      "dialog_node": "node_94_1611837880746",
+      "previous_sibling": "node_87_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation Relent 1",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_94_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_95_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation Press 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">If I have to tell you, Mr. Deadman became a customer of mine about 3 years ago. He must have had a sudden success with his trading business, because he started off his collection by buying a most expensive piece. After that, he bought paintings from me every month until about a year ago when he suddenly stopped.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_94_1611837880746",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_96_1611837880746",
+      "previous_sibling": "node_95_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation Relent 2",
+      "output": {},
+      "parent": "node_96_1611837880746",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@PressOrRelent != \"Press\"",
+      "dialog_node": "node_97_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Victim Relation Press 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">If I had to give a reason as to why he suddenly stopped increasing his collection, I would say that he most likely just ran out of funds. Perhaps his business took a sudden turn for the worse, or perhaps something else got in the way of wealth, but nevertheless it was a shame.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_96_1611837880746",
+      "conditions": "@PressOrRelent:Press",
+      "dialog_node": "node_98_1611837880746",
+      "previous_sibling": "node_97_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Suspicions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Mathieu\">My suspicions? Well the only person that comes to mind as a shady character would be mademoiselle Wilde. Her business is not as reputable as it might seem.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_84_1611837880744",
+      "conditions": "@Questions:Suspicions",
+      "dialog_node": "node_99_1611837880746",
+      "previous_sibling": "node_94_1611837880746"
+    },
+    {
+      "type": "standard",
+      "title": "Introduction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<audio src=\"soundbank://soundlibrary/voices/crowds/crowds_04\"/>\n\nThe date is December 8th, 1864. As evening turns into night, the magnesium flares, which will commemorate the opening of the Clifton Suspension bridge, are being lit. You stand near the center of the bridge during the ceremony, a front row spot, which you got from Lord Felix Grey, a prominent member of the Bristol Society of Merchant Venturers. The reason for your attendance and why you have such an upper class spot, is that you are a private detective hired by the society to observe the members of the bridge's trust. Someone in the charitable trust, originally set up by the society, is suspected of stealing funds for personal use, and your job is to discover the veracity of that suspicion and the culprit, should the suspicion be true.\n\n<audio src=\"soundbank://soundlibrary/weather/wind/wind_01\"/>\n\nAs you continue to observe the trust members for any signs of guilt and suspicion, suddenly a strong gust of wind blows out the magnesium flares, returning the entire event to the darkness of night. In the darkness you lose sight of the six trust members and resign yourself to wait it out. \n\n<audio src=\"soundbank://soundlibrary/explosions/fire/fire_07\"/>\n\nAfter 10 minutes the flares are lit again and you can see once more, immediately taking the opportunity to lock onto the trust members again. However you and the trust's members begin to notice something strange, one of them is missing. Henry Deadman, a successful Bristol business man appears to be gone. \n\n<audio src=\"soundbank://soundlibrary/voices/crowds/crowds_12\"/>\n\nYou decide to look around for where he could be, pondering why he would suddenly leave the venue, but soon gasps are heard from the crowd as a group of men carrying a body approach the bridge. The body is none other than that of Henry Deadman. The men explain that they were watching the unveiling of the bridge from the gorge it spans when they heard something hit the ground near them. They quickly investigated and found that it was a dead body. They realized that the man must have fallen from the bridge, a thing, which even with the lack of light, would have been improbable. Unless of course he was pushed. The crowd seems to quickly reach the same conclusion, and before long the death has been declared a murder. But if he really was pushed off the bridge, the only one in a position to do so would have been the other members of the trust. The members seem to realize this as well and are beginning to cast glances of suspicion at each other. Before this gets out of hand, you decide to introduce yourself and resolve this mystery. You are a detective after all.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "gameState": "New"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Anything else"
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_9_1614593703787"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Detective Story",
+  "language": "en",
+  "description": ""
+}

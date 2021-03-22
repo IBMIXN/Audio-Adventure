@@ -18,11 +18,9 @@ public class HelpIntentHandler implements RequestHandler {
     }
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
-        var reply = "Here is a number <w role=\"amazon:VBD\">read</w>" +
-                "    as a cardinal number:" +
-                "    <say-as interpret-as=\"cardinal\">12345</say-as>." +
-                "    Here is a word spelled out:" +
-                "    <say-as interpret-as=\"spell-out\">hello</say-as>. ";
+        var reply = "Audio Adventure is a thrilling detective game when you have to investigate a" +
+                "mysterious murder happened during the opening of Clifton Suspension Bridge. Pay " +
+                "attention to the arguments of the suspect and don't let the murderer escape!!";
 
         return handlerInput.getResponseBuilder()
                 .withSpeech(reply)
