@@ -8,9 +8,7 @@ import com.amazon.ask.model.Response;
 import com.amazon.ask.model.Slot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import util.Config;
 import watsonHandler.WatsonHandler;
-import watsonHandler.WatsonHandlerImpl;
 
 import java.util.Optional;
 

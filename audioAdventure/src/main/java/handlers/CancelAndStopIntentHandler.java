@@ -19,7 +19,8 @@ public class CancelAndStopIntentHandler implements RequestHandler {
         return handlerInput.matches(
                     intentName(INTENT_NAME1)
                 .or(intentName(INTENT_NAME2)
-                .or(requestType(SessionEndedRequest.class))));
+                .or(requestType(SessionEndedRequest.class))
+                ));
     }
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
