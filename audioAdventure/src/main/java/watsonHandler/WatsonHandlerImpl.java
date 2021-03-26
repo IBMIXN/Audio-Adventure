@@ -119,8 +119,10 @@ public class WatsonHandlerImpl implements WatsonHandler {
         var skills = messageResponse.getContext().skills();
         // Watson API by default use "main skill"
         var contextVariables = skills.get("main skill").userDefined();
-        var newStateStr = (String) contextVariables.getOrDefault(Constants.STATE,
-                State.New.toString());
-        sessionAttributes.put(Constants.STATE, newStateStr);
+        if (contextVariables != null) { // not defined, when entered from the control nodes
+            var newStateStr = (String) contextVariables.getOrDefault(Constants.STATE,
+                    State.New.toString());
+            sessionAttributes.put(Constants.STATE, newStateStr);
+        }
     }
 }
