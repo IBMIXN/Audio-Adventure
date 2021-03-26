@@ -72,6 +72,26 @@
       "fuzzy_match": true
     },
     {
+      "entity": "CheckPointSecrets",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "8d8763cb3aa452b743c594f370c347b8",
+          "synonyms": [
+            "CheckPoint1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "db315b07dddf87159c2238612325a242",
+          "synonyms": [
+            "CheckPoint2"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
       "entity": "Explanations",
       "values": [
         {
@@ -1796,6 +1816,9 @@
           }
         ]
       },
+      "context": {
+        "gameState": "New"
+      },
       "digress_in": "does_not_return",
       "dialog_node": "node_2_1613566869695",
       "previous_sibling": "node_5_1613217893234"
@@ -2365,6 +2388,9 @@
           }
         ]
       },
+      "context": {
+        "gameState": "CheckPoint1"
+      },
       "dialog_node": "node_4_1606839044209",
       "previous_sibling": "node_5_1606830466020"
     },
@@ -2788,6 +2814,9 @@
           }
         ]
       },
+      "context": {
+        "gameState": "CheckPoint2"
+      },
       "dialog_node": "node_5_1613217893234",
       "previous_sibling": "node_2_1613217401396"
     },
@@ -2909,7 +2938,7 @@
           }
         ]
       },
-      "conditions": "",
+      "conditions": "@CheckPointSecrets:8d8763cb3aa452b743c594f370c347b8",
       "digress_in": "does_not_return",
       "dialog_node": "node_5_1614590771238"
     },
@@ -3776,6 +3805,7 @@
           }
         ]
       },
+      "context": {},
       "dialog_node": "node_7_1613224536362",
       "previous_sibling": "node_2_1613566869695"
     },
@@ -4187,6 +4217,7 @@
           }
         ]
       },
+      "context": {},
       "dialog_node": "node_8_1613566874308",
       "previous_sibling": "node_9_1613566871152"
     },
@@ -4625,6 +4656,7 @@
           }
         ]
       },
+      "context": {},
       "dialog_node": "node_9_1613566871152",
       "previous_sibling": "node_7_1613224536362"
     },
@@ -4665,6 +4697,7 @@
           }
         ]
       },
+      "conditions": "@CheckPointSecrets:db315b07dddf87159c2238612325a242",
       "dialog_node": "node_9_1614593703787",
       "previous_sibling": "node_5_1614590771238"
     },
@@ -4827,6 +4860,9 @@
             "selection_policy": "sequential"
           }
         ]
+      },
+      "context": {
+        "gameState": "New"
       },
       "next_step": {
         "behavior": "jump_to",
