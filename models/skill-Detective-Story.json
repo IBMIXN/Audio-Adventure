@@ -42,11 +42,13 @@
           "type": "synonyms",
           "value": "Introduction",
           "synonyms": [
+            "beginning",
             "Introduction",
             "I want to go back to the beginning",
             "I want to go back to the Introduction",
             "I want to go back to the start",
             "I want to start from the beginning",
+            "start over",
             "The beginning",
             "the start",
             "to the first part"
@@ -109,6 +111,31 @@
             "He jumped on his own",
             "he killed himself",
             "It was a suicide"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Help",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "help",
+          "synonyms": [
+            "give me a hint",
+            "Give me some advice",
+            "Give me some help",
+            "Give me some hints",
+            "help",
+            "help me",
+            "hint please",
+            "I am in need of help",
+            "I don't get this",
+            "I don't understand",
+            "I'm lost",
+            "I need help",
+            "I want a hint"
           ]
         }
       ],
@@ -795,7 +822,7 @@
         "selector": "body",
         "dialog_node": "node_7_1611833189098"
       },
-      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "conditions": "@Questions != \"Stop\" &&        @Questions != \"Suspicions\" &&   @Questions != \"Backstory\" &&  @Questions != \"Victim Relation\" && @Help != \"help\"",
       "dialog_node": "node_10_1611833284698"
     },
     {
@@ -926,7 +953,7 @@
         "selector": "body",
         "dialog_node": "node_5_1613217893234"
       },
-      "conditions": "@QuestioningOptions != \"Self\" &&              @QuestioningOptions != \"Horton Gumshoe\" &&             @QuestioningOptions != \"Don't know\" &&            @QuestioningOptions != \"Nobody\" &&           @QuestioningOptions != \"Henry Deadman\" &&         @QuestioningOptions != \"Olivia Winterton\" &&        @QuestioningOptions != \"Lawrence Astor\" &&       @QuestioningOptions != \"Elizabeth Wilde\" &&      @QuestioningOptions != \"Constantine Bridgewater\" &&     @QuestioningOptions != \"you\" &&  @QuestioningOptions != \"Clement Montesquieu\" && @QuestioningOptions != \"Felix Grey\"",
+      "conditions": "@QuestioningOptions != \"Self\" &&               @QuestioningOptions != \"Horton Gumshoe\" &&              @QuestioningOptions != \"Don't know\" &&             @QuestioningOptions != \"Nobody\" &&            @QuestioningOptions != \"Henry Deadman\" &&          @QuestioningOptions != \"Olivia Winterton\" &&         @QuestioningOptions != \"Lawrence Astor\" &&        @QuestioningOptions != \"Elizabeth Wilde\" &&       @QuestioningOptions != \"Constantine Bridgewater\" &&      @QuestioningOptions != \"you\" &&   @QuestioningOptions != \"Clement Montesquieu\" &&  @QuestioningOptions != \"Felix Grey\" && @Help != \"help\"",
       "dialog_node": "node_10_1613568476727"
     },
     {
@@ -1254,7 +1281,7 @@
         "selector": "body",
         "dialog_node": "node_2_1613217401396"
       },
-      "conditions": "@Puzzle2Answer != \"Coffin\"",
+      "conditions": "@Puzzle2Answer != \"Coffin\" && @Help != \"help\"",
       "dialog_node": "node_1_1613217415188"
     },
     {
@@ -1500,7 +1527,7 @@
     },
     {
       "type": "standard",
-      "title": "Elroy Grey Not Finished",
+      "title": "Felix Grey Not Finished",
       "output": {
         "generic": [
           {
@@ -1525,7 +1552,7 @@
     },
     {
       "type": "standard",
-      "title": "Elroy Grey Finished",
+      "title": "Felix Grey Finished",
       "output": {
         "generic": [
           {
@@ -1813,6 +1840,38 @@
     },
     {
       "type": "standard",
+      "title": "Puzzle Sequence 1 Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name= \"Matthew\">The answer might be abstract, and not something tangible. </voice>\n"
+              },
+              {
+                "text": "<voice name= \"Matthew\">Think carefully about the riddle. Is there really anything that actually applies?</voice>\n"
+              },
+              {
+                "text": "<voice name= \"Matthew\">The answer is nothing.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606828329151",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1606828329151"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_2_1616750753453",
+      "previous_sibling": "node_7_1606830244644"
+    },
+    {
+      "type": "standard",
       "title": "Henry Deadman Explanation",
       "output": {
         "generic": [
@@ -2060,6 +2119,32 @@
     },
     {
       "type": "standard",
+      "title": "Constantine Bridgewater Help",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\"> You can question him on the following topics. His background, how he knows the victim, or who he suspects the murderer is. After he replies to your question, you can choose to either press for more information, or stop that line of questioning. Then you can ask him another question, or you can stop questioning him. After you have stopped questioning him, you can choose to question someone else, even someone that you have previously questioned, or you can choose to end questioning and move on to the next part.</voice>\n\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_60_1611836805378",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1611836805378"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_3_1616751340026",
+      "previous_sibling": "node_77_1611836805378"
+    },
+    {
+      "type": "standard",
       "title": "Olivia Winterton Suspicions",
       "output": {
         "generic": [
@@ -2208,7 +2293,7 @@
         "selector": "body",
         "dialog_node": "node_38_1611834752406"
       },
-      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "conditions": "@Questions != \"Stop\" &&        @Questions != \"Suspicions\" &&   @Questions != \"Backstory\" &&  @Questions != \"Victim Relation\" && @Help != \"help\"",
       "dialog_node": "node_39_1611834752409"
     },
     {
@@ -2358,6 +2443,64 @@
       "conditions": "@Explanations:Blackmail",
       "dialog_node": "node_4_1613571790762",
       "previous_sibling": "node_8_1613571688448"
+    },
+    {
+      "type": "standard",
+      "title": "Lawrence Astor Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\"> You can question him on the following topics. His background, how he knows the victim, or who he suspects the murderer is. After he replies to your question, you can choose to either press for more information, or stop that line of questioning. Then you can ask him another question, or you can stop questioning him. After you have stopped questioning him, you can choose to question someone else, even someone that you have previously questioned, or you can choose to end questioning and move on to the next part.</voice>\n\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606839292573",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606839292573"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_4_1616751100211",
+      "previous_sibling": "node_10_1608733420797"
+    },
+    {
+      "type": "standard",
+      "title": "Puzzle 2 Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">The answer is very fitting for the current situation.</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Geraint\">The answer is something the victim could make use of.</voice>"
+              },
+              {
+                "text": "<voice name=\"Geraint\">The answer is a coffin.</voice>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1613217401396",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1613217401396"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_4_1616751704348",
+      "previous_sibling": "node_10_1613217417550"
     },
     {
       "type": "standard",
@@ -2772,6 +2915,38 @@
     },
     {
       "type": "standard",
+      "title": "Accusation Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Geraint\">Think back to what each person told you during questioning. Is there a clear culprit among them, or do they all seem innocent?</voice>\n"
+              },
+              {
+                "text": "<voice name=\"Geraint\">Was the death of Henry Deadman really a murder?</voice>"
+              },
+              {
+                "text": "<voice name=\"Geraint\">Is there someone that seems to be pulling the strings on this entire situation? Perhaps thinking outside of the box could be helpful.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1613217893234",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1613217893234"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_5_1616751791991",
+      "previous_sibling": "node_20_1613572768890"
+    },
+    {
+      "type": "standard",
       "title": "Elizabeth Wilde Victim Relation Press 2",
       "output": {
         "generic": [
@@ -2954,7 +3129,7 @@
         "selector": "body",
         "dialog_node": "node_60_1611836805378"
       },
-      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "conditions": "@Questions != \"Stop\" &&        @Questions != \"Suspicions\" &&   @Questions != \"Backstory\" &&  @Questions != \"Victim Relation\" && @Help != \"help\"",
       "dialog_node": "node_61_1611836805378"
     },
     {
@@ -2979,7 +3154,7 @@
         "selector": "body",
         "dialog_node": "node_4_1606839044209"
       },
-      "conditions": "@QuestioningOptions != \"Elizabeth Wilde\" &&         @QuestioningOptions != \"Lawrence Astor\" &&        @QuestioningOptions != \"Olivia Winterton\" &&       @QuestioningOptions != \"Constantine Bridgewater\" &&    @QuestioningOptions != \"Done\" &&   @QuestioningOptions != \"you\" && @QuestioningOptions != \"Clement Montesquieu\"",
+      "conditions": "@QuestioningOptions != \"Elizabeth Wilde\" &&          @QuestioningOptions != \"Lawrence Astor\" &&         @QuestioningOptions != \"Olivia Winterton\" &&        @QuestioningOptions != \"Constantine Bridgewater\" &&     @QuestioningOptions != \"Done\" &&    @QuestioningOptions != \"you\" &&  @QuestioningOptions != \"Clement Montesquieu\" && @Help != \"help\"",
       "dialog_node": "node_6_1606839056326",
       "previous_sibling": "node_7_1606839686233"
     },
@@ -3161,6 +3336,58 @@
       "conditions": "@CheckpointOptions:Accusation",
       "dialog_node": "node_6_1614593733715",
       "previous_sibling": "node_11_1614593703788"
+    },
+    {
+      "type": "standard",
+      "title": "Olivia Winterton Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\"> You can question her on the following topics. Her background, how she knows the victim, or who she suspects the murderer is. After she replies to your question, you can choose to either press for more information, or stop that line of questioning. Then you can ask her another question, or you can stop questioning her. After you have stopped questioning her, you can choose to question someone else, even someone that you have previously questioned, or you can choose to end questioning and move on to the next part.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1611833189098",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1611833189098"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_6_1616751243716",
+      "previous_sibling": "node_33_1611834579602"
+    },
+    {
+      "type": "standard",
+      "title": "Clement Montesquieu Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\"> You can question him on the following topics. His background, how he knows the victim, or who he suspects the murderer is. After he replies to your question, you can choose to either press for more information, or stop that line of questioning. Then you can ask him another question, or you can stop questioning him. After you have stopped questioning him, you can choose to question someone else, even someone that you have previously questioned, or you can choose to end questioning and move on to the next part.</voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_84_1611837880744",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_84_1611837880744"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_6_1616751487483",
+      "previous_sibling": "node_99_1611837880746"
     },
     {
       "type": "standard",
@@ -3368,7 +3595,7 @@
         "selector": "body",
         "dialog_node": "node_1_1606828329151"
       },
-      "conditions": "@Puzzle1Answer != \"Nothing\"",
+      "conditions": "@Puzzle1Answer != \"Nothing\" && @Help != \"help\"",
       "dialog_node": "node_7_1606830244644",
       "previous_sibling": "node_9_1606828428226"
     },
@@ -3593,6 +3820,32 @@
       "conditions": "@QuestioningOptions:Nobody",
       "dialog_node": "node_7_1613571616264",
       "previous_sibling": "node_4_1613567521434"
+    },
+    {
+      "type": "standard",
+      "title": "Questioning Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\">Start by picking someone to question. There are a total of 5 people that you can question. After you have picked someone, you can question them on the following topics. Their background, how they know the victim, or who they suspect the murderer is. After they reply to your question, you can choose to either press for more information, or stop that line of questioning. Then you can ask them another question, or you can stop questioning that individual. After you have stopped questioning someone you can choose to question someone else, even someone that you have previously questioned, or you can choose to end questioning and move on.</voice>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606839044209",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1606839044209"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_7_1616751009937",
+      "previous_sibling": "node_84_1611837880744"
     },
     {
       "type": "standard",
@@ -4095,7 +4348,7 @@
         "selector": "body",
         "dialog_node": "node_84_1611837880744"
       },
-      "conditions": "@Questions != \"Stop\" &&       @Questions != \"Suspicions\" &&  @Questions != \"Backstory\" && @Questions != \"Victim Relation\"",
+      "conditions": "@Questions != \"Stop\" &&        @Questions != \"Suspicions\" &&   @Questions != \"Backstory\" &&  @Questions != \"Victim Relation\" && @Help != \"help\"",
       "dialog_node": "node_85_1611837880746"
     },
     {
@@ -4281,7 +4534,7 @@
         "selector": "body",
         "dialog_node": "node_2_1606839292573"
       },
-      "conditions": "@Questions != \"Stop\" &&   @Questions != \"Backstory\" &&  @Questions != \"Victim Relation\" && @Questions != \"Suspicions\"",
+      "conditions": "@Questions != \"Stop\" &&    @Questions != \"Backstory\" &&   @Questions != \"Victim Relation\" &&  @Questions != \"Suspicions\" && @Help != \"help\"",
       "dialog_node": "node_9_1608733398911"
     },
     {
@@ -4414,6 +4667,32 @@
       },
       "dialog_node": "node_9_1614593703787",
       "previous_sibling": "node_5_1614590771238"
+    },
+    {
+      "type": "standard",
+      "title": "Elizabeth Wilde Hint",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<voice name=\"Matthew\"> You can question her on the following topics. Her background, how she knows the victim, or who she suspects the murderer is. After she replies to your question, you can choose to either press for more information, or stop that line of questioning. Then you can ask her another question, or you can stop questioning her. After you have stopped questioning her, you can choose to question someone else, even someone that you have previously questioned, or you can choose to end questioning and move on to the next part.</voice>\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_38_1611834752406",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_38_1611834752406"
+      },
+      "conditions": "@Help:help",
+      "dialog_node": "node_9_1616751288064",
+      "previous_sibling": "node_55_1611834752409"
     },
     {
       "type": "standard",
