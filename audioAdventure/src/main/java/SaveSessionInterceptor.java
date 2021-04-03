@@ -1,3 +1,5 @@
+import static com.amazon.ask.request.Predicates.intentName;
+
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.model.Response;
 import handlers.EverythingIntentHandler;
@@ -14,6 +16,10 @@ public class SaveSessionInterceptor
 
   @Override
   public void process(HandlerInput handlerInput, Optional<Response> optional) {
+    if (!handlerInput.matches(intentName(EverythingIntentHandler.INTENT_NAME))) {
+      return;
+    }
+
     var sessionAttributes = handlerInput.getAttributesManager().getSessionAttributes();
 
     var sessionState = (String) sessionAttributes.get((Constants.STATE));

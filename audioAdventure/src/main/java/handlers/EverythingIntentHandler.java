@@ -17,13 +17,15 @@ import watsonhandler.WatsonHandler;
 
 /**
  * EverythingIntentHander handles EverythingIntent.
- * <p></p>
- * Captures user's utterances and send them to WatsonAssistant
- * Replies with WatsonAssistant's response.
+ *
+ * <p>Captures user's utterances and send them to WatsonAssistant Replies with WatsonAssistant's
+ * response.
  */
 public final class EverythingIntentHandler implements RequestHandler {
 
-  private static final String INTENT_NAME = "EverythingIntent";
+  /** Intent name EverythingIntent. */
+  public static final String INTENT_NAME = "EverythingIntent";
+
   private static final Logger logger = LoggerFactory.getLogger(EverythingIntentHandler.class);
 
   private final WatsonHandler handler;
@@ -33,7 +35,7 @@ public final class EverythingIntentHandler implements RequestHandler {
   }
 
   public boolean canHandle(final HandlerInput handlerInput) {
-    return handlerInput.matches(intentName(INTENT_NAME).or(requestType(LaunchRequest.class)));
+    return handlerInput.matches(requestType(LaunchRequest.class).or(intentName(INTENT_NAME)));
   }
 
   /**
@@ -56,13 +58,18 @@ public final class EverythingIntentHandler implements RequestHandler {
   }
 
   private String getUserMessage(final HandlerInput handlerInput) {
-    var intent = (IntentRequest) handlerInput.getRequestEnvelope().getRequest();
-    Slot slot = intent.getIntent().getSlots().get(SLOT_NAME);
-    if (slot == null || slot.getValue() == null) {
-      logger.warn("Empty Slot value");
-      return null;
+    var request = handlerInput.getRequestEnvelope().getRequest();
+    if (request instanceof IntentRequest) {
+      var intent = (IntentRequest) request;
+      Slot slot = intent.getIntent().getSlots().get(SLOT_NAME);
+      if (slot == null || slot.getValue() == null) {
+        logger.warn("Empty Slot value");
+        return null;
+      }
+      return slot.getValue();
+    } else {
+      return "";
     }
-    return slot.getValue();
   }
 
   private String getResponseFromWatson(final HandlerInput handlerInput, final String msg) {

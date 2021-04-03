@@ -170,6 +170,7 @@ public class InterceptorsTest {
                         .builder()
                         .withIntent(Intent
                                 .builder()
+                                .withName("EverythingIntent")
                                 .putSlotsItem(Constants.SLOT_NAME, Slot
                                         .builder()
                                         .withName(Constants.SLOT_NAME)

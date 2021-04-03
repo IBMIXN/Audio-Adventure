@@ -19,7 +19,7 @@ public class NewSessionInterceptor
   @Override
   public void process(HandlerInput handlerInput) {
     // On a new session, create/restore data from DynamoDB
-    logger.info("New Session created");
+    logger.info("NewSessionInterceptor Called");
     if (handlerInput.getRequestEnvelope().getSession().getNew()) {
       var attributeManager = handlerInput.getAttributesManager();
       var attributes = attributeManager.getPersistentAttributes();
@@ -36,10 +36,12 @@ public class NewSessionInterceptor
       }
 
       attributes.put(STATE_OLD, attributes.get(STATE));
-      var intent = (IntentRequest) handlerInput.getRequestEnvelope().getRequest();
-      var slot = Slot.builder().withName(SLOT_NAME).withValue(message).build();
-      intent.getIntent().getSlots().put(SLOT_NAME, slot);
-
+      var request = handlerInput.getRequestEnvelope().getRequest();
+      if (request instanceof IntentRequest) {
+        var intent = (IntentRequest) request;
+        var slot = Slot.builder().withName(SLOT_NAME).withValue(message).build();
+        intent.getIntent().getSlots().put(SLOT_NAME, slot);
+      }
       attributeManager.setSessionAttributes(attributes);
     }
   }
