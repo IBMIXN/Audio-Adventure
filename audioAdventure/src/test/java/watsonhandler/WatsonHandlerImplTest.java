@@ -1,4 +1,4 @@
-package watsonHandler;
+package watsonhandler;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,10 +24,10 @@ public class WatsonHandlerImplTest {
     @Test
     public void testConfigNotNull() {
         assertNotNull(config);
-        assertNotNull(config.WATSON_ASSISTANT_ID);
-        assertNotNull(config.ALEXA_SKILL_ID);
-        assertNotNull(config.WATSON_API_KEY);
-        assertNotNull(config.WATSON_SERVICE_URL);
+        assertNotNull(config.watsonAssistantId);
+        assertNotNull(config.alexaSkillId);
+        assertNotNull(config.watsonApiKey);
+        assertNotNull(config.watsonServiceUrl);
         System.out.println(config.toString());
     }
 

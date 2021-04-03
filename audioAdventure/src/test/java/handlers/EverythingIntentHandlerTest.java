@@ -4,23 +4,21 @@ import com.amazon.ask.attributes.persistence.PersistenceAdapter;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.model.*;
 import com.amazon.ask.model.interfaces.system.SystemState;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 import util.Constants;
 import util.State;
-import watsonHandler.WatsonHandler;
+import watsonhandler.WatsonHandler;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -34,7 +32,7 @@ public class EverythingIntentHandlerTest {
     @Test
     @SuppressWarnings("unchecked")
     public void testDialog() {
-        var input =  mockedInputWith(true, "test", State.New, new HashMap<>(){{
+        var input = mockedInputWith(true, "test", State.New, new HashMap<>() {{
             put("something", "else");
         }});
         var mapArgumentCaptor =
@@ -57,7 +55,7 @@ public class EverythingIntentHandlerTest {
     private HandlerInput mockedInputWith(boolean newSession, String msg, State persistentState,
                                          Map<String, Object> sessionVariables) {
         PersistenceAdapter persistent = mock(PersistenceAdapter.class);
-        Map<String, Object> map = new HashMap<>(){{
+        Map<String, Object> map = new HashMap<>() {{
             put(Constants.STATE, persistentState.toString()); // state saved in the persistent storage
         }};
         var context = Context.builder()
@@ -87,11 +85,7 @@ public class EverythingIntentHandlerTest {
         assertNotNull(session.getAttributes());
         assertNotNull(requestEnvelope.getSession().getAttributes());
 
-        var input =
-                HandlerInput.builder().withPersistenceAdapter(persistent)
-                        .withRequestEnvelope(requestEnvelope).build();
-        when(persistent.getAttributes(any())).thenReturn(java.util.Optional.of(map));
-
-        return input;
+        return HandlerInput.builder().withPersistenceAdapter(persistent)
+                .withRequestEnvelope(requestEnvelope).build();
     }
 }
