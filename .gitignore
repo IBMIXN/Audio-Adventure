@@ -3,4 +3,7 @@
 /audioAdventure/target/*
 /audioAdventure/AudioAdventure.iml
 /audioAdventure/dependency-reduced-pom.xml
-samconfig.toml
+template_dev.yaml
+template_prod.yaml
+samconfig_dev.toml
+samconfig_prod.toml
