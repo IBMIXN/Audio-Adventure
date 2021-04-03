@@ -1,69 +1,85 @@
 package handlers;
 
+import static com.amazon.ask.request.Predicates.intentName;
+import static com.amazon.ask.request.Predicates.requestType;
+import static util.Constants.SLOT_NAME;
+
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.IntentRequest;
 import com.amazon.ask.model.LaunchRequest;
 import com.amazon.ask.model.Response;
 import com.amazon.ask.model.Slot;
+import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import watsonHandler.WatsonHandler;
+import watsonhandler.WatsonHandler;
 
-import java.util.Optional;
+/**
+ * EverythingIntentHander handles EverythingIntent.
+ *
+ * <p>Captures user's utterances and send them to WatsonAssistant Replies with WatsonAssistant's
+ * response.
+ */
+public final class EverythingIntentHandler implements RequestHandler {
 
-import static com.amazon.ask.request.Predicates.intentName;
-import static com.amazon.ask.request.Predicates.requestType;
-import static util.Constants.SLOT_NAME;
+  /** Intent name EverythingIntent. */
+  public static final String INTENT_NAME = "EverythingIntent";
 
+  private static final Logger logger = LoggerFactory.getLogger(EverythingIntentHandler.class);
 
-public class EverythingIntentHandler implements RequestHandler {
+  private final WatsonHandler handler;
 
-    private static final String INTENT_NAME = "EverythingIntent";
-    private static final Logger logger = LoggerFactory.getLogger(EverythingIntentHandler.class);
+  public EverythingIntentHandler(final WatsonHandler watsonHandler) {
+    this.handler = watsonHandler;
+  }
 
-    private final WatsonHandler handler;
+  public boolean canHandle(final HandlerInput handlerInput) {
+    return handlerInput.matches(requestType(LaunchRequest.class).or(intentName(INTENT_NAME)));
+  }
 
-    public EverythingIntentHandler(WatsonHandler watsonHandler) {
-        this.handler = watsonHandler;
+  /**
+   * Handles the input.
+   *
+   * @param handlerInput user input
+   * @return optional response, might be empty in case of an error
+   */
+  public Optional<Response> handle(final HandlerInput handlerInput) {
+    var msg = getUserMessage(handlerInput);
+    logger.info("User input " + msg);
+
+    var response = getResponseFromWatson(handlerInput, msg);
+
+    return handlerInput
+        .getResponseBuilder()
+        .withReprompt("Tell me what do you think")
+        .withSpeech(response)
+        .build();
+  }
+
+  private String getUserMessage(final HandlerInput handlerInput) {
+    var request = handlerInput.getRequestEnvelope().getRequest();
+    if (request instanceof IntentRequest) {
+      var intent = (IntentRequest) request;
+      Slot slot = intent.getIntent().getSlots().get(SLOT_NAME);
+      if (slot == null || slot.getValue() == null) {
+        logger.warn("Empty Slot value");
+        return null;
+      }
+      return slot.getValue();
+    } else {
+      return "";
     }
+  }
 
-    public boolean canHandle(HandlerInput handlerInput) {
-        return handlerInput.matches(intentName(INTENT_NAME).or(requestType(LaunchRequest.class)));
+  private String getResponseFromWatson(final HandlerInput handlerInput, final String msg) {
+    var sessionAttributes = handlerInput.getAttributesManager().getSessionAttributes();
+    Optional<String> text = handler.getResponseFromWatson(msg, sessionAttributes);
+
+    if (text.isEmpty()) {
+      logger.warn("Empty watson response");
+      return null;
     }
-
-    public Optional<Response> handle(HandlerInput handlerInput) {
-        var msg = getUserMessage(handlerInput);
-        logger.info("User input " + msg);
-
-        var response = getResponseFromWatson(handlerInput, msg);
-
-        return handlerInput.getResponseBuilder()
-                .withReprompt("Tell me what do you think")
-                .withSpeech(response)
-                .build();
-    }
-
-
-
-    private String getUserMessage(HandlerInput handlerInput) {
-        var intent = (IntentRequest)handlerInput.getRequestEnvelope().getRequest();
-        Slot slot = intent.getIntent().getSlots().get(SLOT_NAME);
-        if (slot == null || slot.getValue() == null) {
-            logger.warn("Empty Slot value");
-            return null;
-        }
-        return slot.getValue();
-    }
-
-    private String getResponseFromWatson(HandlerInput handlerInput, String msg) {
-        var sessionAttributes = handlerInput.getAttributesManager().getSessionAttributes();
-        Optional<String> text = handler.getResponseFromWatson(msg, sessionAttributes);
-
-        if (text.isEmpty()) {
-            logger.warn("Empty watson response");
-            return null;
-        }
-        return text.get();
-    }
+    return text.get();
+  }
 }

@@ -2,21 +2,17 @@ package util;
 
 import org.junit.Test;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.util.Objects;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ConfigTest {
     @Test
     public void testCorrectness() {
         var config = new Config("/config_template.xml");
-        assertEquals("a", config.ALEXA_SKILL_ID);
-        assertEquals("b", config.WATSON_API_KEY);
-        assertEquals("c", config.WATSON_SERVICE_URL);
-        assertEquals("d", config.WATSON_ASSISTANT_ID);
+        assertEquals("a", config.alexaSkillId);
+        assertEquals("b", config.watsonApiKey);
+        assertEquals("c", config.watsonServiceUrl);
+        assertEquals("d", config.watsonAssistantId);
     }
 
     @Test
