@@ -750,7 +750,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">Out of curiosity, I once had someone purchase one of her pieces, she deals in antiques you see. I had a friend of mine examine it only to find that was nothing more than a fake. This isn’t necessarily connected to the murder but I should mention that while Monsieur Deadman was a customer of mine, he did not ever purchase anything from her.</voice>"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">Out of curiosity, I once had someone purchase one of her pieces, she deals in antiques you see. I had a friend of mine examine it only to find that was nothing more than a fake. This isn’t necessarily connected to the murder but I should mention that while Monsieur Deadman was a customer of mine, he did not ever purchase anything from her.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -1030,7 +1030,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">That is all.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">That is all.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -1081,7 +1081,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">Je ne sais plus, I have nothing more to tell you about this.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">Je ne sais plus, I have nothing more to tell you about this.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -1677,7 +1677,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">So it is my turn then? very well, I will tell you all I can.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">So it is my turn then? very well, I will tell you all I can.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -3118,13 +3118,13 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">What would you like to ask me?</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">What would you like to ask me?</prosody></voice>\n"
               },
               {
-                "text": "<voice name=\"Hans\">Anything else you need? If so, ask away.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">Anything else you need? If so, ask away.</prosody></voice>\n"
               },
               {
-                "text": "<voice name=\"Hans\">Is that everything you needed to know from me?</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">Is that everything you needed to know from me?</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3426,7 +3426,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">I am glad I could help.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">I am glad I could help.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3452,7 +3452,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">I would be happy to tell you about myself. I am originally from Prussia, but came here, to Bristol, 30 years ago along with some friends. We all joined a construction company run by a Prussian man, and we have been working there since. The company was hired by the trust to start construction on the towers, which are part of the bridge 28 years ago. Following their completion, he was appointed the 4th member of the trust by James Astor, Lawrence Astor’s father. When the owner of the company died, childless, 16 years ago, he placed the company in my hands, and I inherited the position on the trust as well.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">I would be happy to tell you about myself. I am originally from Prussia, but came here, to Bristol, 30 years ago along with some friends. We all joined a construction company run by a Prussian man, and we have been working there since. The company was hired by the trust to start construction on the towers, which are part of the bridge 28 years ago. Following their completion, he was appointed the 4th member of the trust by James Astor, Lawrence Astor’s father. When the owner of the company died, childless, 16 years ago, he placed the company in my hands. And I inherited the position on the trust as well.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3494,7 +3494,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">My apologies for the pause, let me continue where I left off. After funding was again secured for the bridge, my company was tasked with finishing it 2 years ago. And now here we stand. This should be a proud moment. But instead, this victory over nature is overshadowed by death.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">My apologies for the pause, let me continue where I left off. After funding was again secured for the bridge, my company was tasked with finishing it 2 years ago. And now here we stand. This should be a proud moment. But instead, this victory over nature is overshadowed by death.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3536,7 +3536,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">That is all I have to say about myself.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">That is all I have to say about myself.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -3562,7 +3562,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\"> I’m sorry, but I only know Herr Deadman from trust meetings. He joined the trust 12 years ago, and was always pleasant with me the few times we spoke, unlike his predecessor.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\"> I’m sorry, but I only know Herr Deadman from trust meetings. He joined the trust 12 years ago, and was always pleasant with me the few times we spoke, unlike his predecessor.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3885,7 +3885,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">You wish for me to clarify that? I meant Lord Felix Grey, one of the original members of the trust. He gave his position to Herr Deadman so that he could retire from the trust. And I have to say that that has brought me some solace. He was never particularly nice to me, and was even rude on occasion.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">You wish for me to clarify that? I meant Lord Felix Grey, one of the original members of the trust. He gave his position to Herr Deadman so that he could retire from the trust. And I have to say that that has brought me some solace. He was never particularly nice to me, and was even rude on occasion.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3919,7 +3919,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">The reason for his treatment of me might stem from the fact that I joined the trust due to James Astor. He was the one to suggest my predecessor, and supported me as his replacement when he died. I have learned from the construction business that, while it is important to keep an overview of everything, one has to let others take responsibility and do their parts without directly controlling everyone. I believe Lord Grey does not share that sentiment, and did not appreciate someone else inviting members to the trust. This would also explain why he isn’t particularly pleasant with Herr Montesquieu either.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">The reason for his treatment of me might stem from the fact that I joined the trust due to James Astor. He was the one to suggest my predecessor, and supported me as his replacement when he died. I have learned from the construction business that, while it is important to keep an overview of everything, one has to let others take responsibility and do their parts without directly controlling everyone. I believe Lord Grey does not share that sentiment, and did not appreciate someone else inviting members to the trust. This would also explain why he isn’t particularly pleasant with Herr Montesquieu either.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -3961,7 +3961,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">I am out of things to say on that matter.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">I am out of things to say on that matter.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -3987,7 +3987,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">I apologize, but I don’t really have any strong suspicions on who killed Herr Deadman.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">I apologize, but I don’t really have any strong suspicions on who killed Herr Deadman.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -4029,7 +4029,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">If I have to give a name, I would give Herr Montesquieu’s, as he is the most different out of all the trust members, and also because Lord Grey isn’t here.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">If I have to give a name, I would give Herr Montesquieu’s, as he is the most different out of all the trust members, and also because Lord Grey isn’t here.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -4071,7 +4071,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">What I mean by that is that, unlike myself, Herr Montesquieu never tried to fit in with local culture, something I consider important. I even changed my name to fit in more. I used to be called Constantine Brueckenwasser. As for Lord Grey, I never found him to be, how do you say, agreeable, by that I mean he was always unpleasant to me.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">What I mean by that is that, unlike myself, Herr Montesquieu never tried to fit in with local culture, something I consider important. I even changed my name to fit in more. I used to be called Constantine Brueckenwasser. As for Lord Grey, I never found him to be, how do you say, agreeable, by that I mean he was always unpleasant to me.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -4092,7 +4092,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">So it is my time to answer. As you wish, Je suis pret.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">So it is my time to answer. As you wish, Je suis pret.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -4313,7 +4313,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Hans\">Nothing more comes to mind.</voice>\n"
+                "text": "<voice name=\"Hans\"><prosody rate=\"slow\">Nothing more comes to mind.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -4339,13 +4339,13 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">Please, make this quick.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">Please, make this quick.</prosody></voice>\n\n"
               },
               {
-                "text": "<voice name=\"Mathieu\">Finished yet? I don’t have all day</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">Finished yet? I don’t have all day</prosody></voice>\n\n"
               },
               {
-                "text": "<voice name=\"Mathieu\">Is that all?</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">Is that all?</prosody></voice>\n\n\n"
               }
             ],
             "response_type": "text",
@@ -4390,7 +4390,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">Tres Bien, I hope you have what you need.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">Tres Bien, I hope you have what you need.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -4410,13 +4410,13 @@
     },
     {
       "type": "standard",
-      "title": "Pierre Montesquieu Backstory ",
+      "title": "Clement Montesquieu Backstory ",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">If we do not count replacements and inheritances, I am the 5th member of the trust. I was appointed to the trust by the late Duke Winterton, 15 years ago. The reason for that being my success in the art trading scene, both in Paris and here in Bristol.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">If we do not count replacements and inheritances, I am the 5th member of the trust. I was appointed to the trust by the late Duke Winterton, 15 years ago. The reason for that being my success in the art trading scene, both in Paris and here in Bristol.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -4458,7 +4458,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">If you must know. The reason that the Duke invited me to the trust was because of his interest in buying art. After he became bored of the local sellers, he branched out, and we met at an art gala in Paris. Following that he invited me to Bristol, and despite not being of English blood he, as an original member, made me a member of the trust as well.</voice>\n\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">If you must know. The reason that the Duke invited me to the trust was because of his interest in buying art. After he became bored of the local sellers, he branched out, and we met at an art gala in Paris. Following that he invited me to Bristol, and despite not being of English blood he, as an original member, made me a member of the trust as well.</prosody></voice>\n\n\n"
               }
             ],
             "response_type": "text",
@@ -4500,7 +4500,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">I doubt you would be interested in anything more about me.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">I doubt you would be interested in anything more about me.</prosody></voice>\n\n"
               }
             ],
             "response_type": "text",
@@ -4735,7 +4735,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">In addition to both being members of the trust. Monsieur Deadman was one of my best clients for some time. He, like the Duchess and her husband before her, came to me to purchase only the finest pieces of art, that could not be bought from anyone else.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">In addition to both being members of the trust. Monsieur Deadman was one of my best clients for some time. He, like the Duchess and her husband before her, came to me to purchase only the finest pieces of art, that could not be bought from anyone else.</prosody></voice>"
               }
             ],
             "response_type": "text",
@@ -4777,7 +4777,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">If I have to tell you, Mr. Deadman became a customer of mine about 3 years ago. He must have had a sudden success with his trading business, because he started off his collection by buying a most expensive piece. After that, he bought paintings from me every month until about a year ago when he suddenly stopped.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">If I have to tell you, Mr. Deadman became a customer of mine about 3 years ago. He must have had a sudden success with his trading business, because he started off his collection by buying a most expensive piece. After that, he bought paintings from me every month until about a year ago when he suddenly stopped.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -4811,7 +4811,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">If I had to give a reason as to why he suddenly stopped increasing his collection, I would say that he most likely just ran out of funds. Perhaps his business took a sudden turn for the worse, or perhaps something else got in the way of wealth, but nevertheless it was a shame.</voice>"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">If I had to give a reason as to why he suddenly stopped increasing his collection, I would say that he most likely just ran out of funds. Perhaps his business took a sudden turn for the worse, or perhaps something else got in the way of wealth, but nevertheless it was a shame.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
@@ -4832,7 +4832,7 @@
           {
             "values": [
               {
-                "text": "<voice name=\"Mathieu\">My suspicions? Well the only person that comes to mind as a shady character would be mademoiselle Wilde. Her business is not as reputable as it might seem.</voice>\n"
+                "text": "<voice name=\"Mathieu\"><prosody rate=\"slow\">My suspicions? Well the only person that comes to mind as a shady character would be mademoiselle Wilde. Her business is not as reputable as it might seem.</prosody></voice>\n"
               }
             ],
             "response_type": "text",
