@@ -4,6 +4,13 @@ Description: >
   AudioAdventure
   An audio game developed using Alexa Skill and Watson Assistant
 
+Globals:
+  Function:
+    Environment:
+      Variables:
+        STAGE: Production
+        CONFIG_FILE: /config.xml
+
 Resources:
   AlexaHandlerFunction:
     Type: AWS::Serverless::Function
@@ -14,10 +21,12 @@ Resources:
       CodeUri: ./audioAdventure
       MemorySize: 512
       Timeout: 15
+      Policies:
+        - AmazonDynamoDBFullAccess
       Events:
         Alexa:
           Type: AlexaSkill
-          SkillId: amzn1.ask.skill.70c90c47-8c77-48aa-b57c-2eb6ffdf495c
+          SkillId: {alexa skill id}
 
 Outputs:
   AlexaSampleFunctionArn:

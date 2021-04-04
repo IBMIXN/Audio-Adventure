@@ -2,7 +2,6 @@ import com.amazon.ask.attributes.persistence.PersistenceAdapter;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.model.*;
 import com.amazon.ask.model.interfaces.system.SystemState;
-
 import org.junit.Before;
 import org.junit.Test;
 import util.Constants;
@@ -13,7 +12,6 @@ import java.util.Map;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
 public class InterceptorsTest {
@@ -28,7 +26,7 @@ public class InterceptorsTest {
 
     @Test
     public void ensureNothingChangesOnNewSession() {
-        var input = mockedInputWith(false, "test", State.New, new HashMap<>(){{
+        var input = mockedInputWith(false, "test", State.New, new HashMap<>() {{
             put(Constants.STATE, State.New.toString());
         }});
 
@@ -41,7 +39,7 @@ public class InterceptorsTest {
 
     @Test
     public void onNewSessionAndNewStateEmptyMessage() {
-        var input = mockedInputWith(true, "test", State.New, new HashMap<>(){{
+        var input = mockedInputWith(true, "test", State.New, new HashMap<>() {{
             put(Constants.STATE, State.CheckPoint1.toString());
         }});
 
@@ -155,7 +153,7 @@ public class InterceptorsTest {
     private HandlerInput mockedInputWith(boolean newSession, String msg, State persistentState,
                                          Map<String, Object> sessionVariables) {
         PersistenceAdapter persistent = mock(PersistenceAdapter.class);
-        Map<String, Object> map = new HashMap<>(){{
+        Map<String, Object> map = new HashMap<>() {{
             put(Constants.STATE, persistentState.toString()); // state saved in the persistent storage
         }};
         var context = Context.builder()
@@ -172,6 +170,7 @@ public class InterceptorsTest {
                         .builder()
                         .withIntent(Intent
                                 .builder()
+                                .withName("EverythingIntent")
                                 .putSlotsItem(Constants.SLOT_NAME, Slot
                                         .builder()
                                         .withName(Constants.SLOT_NAME)
@@ -211,7 +210,7 @@ public class InterceptorsTest {
     }
 
     private String getMessage(HandlerInput handlerInput) {
-        return ((IntentRequest)handlerInput.getRequestEnvelope().getRequest()).getIntent().getSlots().get(Constants.SLOT_NAME).getValue();
+        return ((IntentRequest) handlerInput.getRequestEnvelope().getRequest()).getIntent().getSlots().get(Constants.SLOT_NAME).getValue();
     }
 
 }
